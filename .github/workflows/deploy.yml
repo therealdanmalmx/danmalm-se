@@ -1,0 +1,37 @@
+# Builds the static site and uploads out/ to the VPS, where Caddy serves it.
+# Required repository secrets: VPS_SSH_KEY, VPS_KNOWN_HOSTS, VPS_HOST, VPS_USER.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: Upload site
+        run: rsync -az --delete out/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/apps/danmalm/out/"
