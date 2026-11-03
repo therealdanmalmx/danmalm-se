@@ -41,8 +41,8 @@ export const en: Content = {
   hero: {
     headline: {
       before: "The business developer who found a home in code – building software with ",
-      emphasis: "business value",
-      after: " as the compass.",
+      emphasis: "real value",
+      after: " as my compass.",
     },
     greeting: "Hi, I'm",
     intro: "a full-stack developer since 2020. I start with why – then I build it.",
