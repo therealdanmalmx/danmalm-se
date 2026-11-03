@@ -33,5 +33,6 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           echo "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
+      # /srv/apps on the host is mounted as /apps in the Caddy container.
       - name: Upload site
-        run: rsync -az --delete out/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/apps/danmalm/out/"
+        run: rsync -az --delete out/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/srv/apps/danmalm/out/"
