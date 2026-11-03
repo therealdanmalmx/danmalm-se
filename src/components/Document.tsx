@@ -47,7 +47,18 @@ export function Document({
     <html lang={t.locale}>
       {/* A plain <head> is correct in an App Router root layout; the rule targets next/head. */}
       {/* eslint-disable-next-line @next/next/no-head-element */}
-      {head && <head>{head}</head>}
+      <head>
+        {head}
+        {/* Analyzati page analytics */}
+        <script
+          data-host="https://app.analyzati.com"
+          data-dnt="false"
+          src="https://app.analyzati.com/js/script.js?v=1793189645"
+          id="ZwSg9rf6GA"
+          async
+          defer
+        />
+      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
       </body>
