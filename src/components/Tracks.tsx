@@ -1,7 +1,8 @@
 import { siteConfig } from "@/site.config";
-import { tracks } from "@/content/content";
+import type { Content } from "@/content/content";
 
-export function Tracks() {
+export function Tracks({ t }: { t: Content }) {
+  const { tracks } = t;
   return (
     <>
       <p className="mb-12 font-display text-3xl font-bold tracking-tight sm:text-4xl">{tracks.heading}</p>

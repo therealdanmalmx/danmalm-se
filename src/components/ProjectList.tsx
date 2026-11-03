@@ -1,4 +1,4 @@
-import { projects, type Project } from "@/content/content";
+import type { Content, Project } from "@/content/content";
 import { GitHubIcon } from "./icons";
 
 const linkProps = { target: "_blank", rel: "noopener noreferrer" } as const;
@@ -8,7 +8,8 @@ function hostname(url: string) {
 }
 
 // Same two-column rhythm as the experience list: metadata left, story right.
-export function ProjectItem({ project }: { project: Project }) {
+export function ProjectItem({ t, project }: { t: Content; project: Project }) {
+  const newTab = <span className="sr-only"> {t.newTab}</span>;
   return (
     <li id={project.id} className="grid scroll-mt-24 gap-3 py-8 first:pt-0 lg:grid-cols-[11rem_1fr] lg:gap-8">
       <div className="font-mono text-xs leading-relaxed text-muted">
@@ -21,7 +22,7 @@ export function ProjectItem({ project }: { project: Project }) {
         <h3 className="font-display text-xl font-semibold">
           <a href={project.url} {...linkProps} className="underline-offset-4 hover:text-accent hover:underline">
             {project.name}
-            <span className="sr-only"> (öppnas i ny flik)</span>
+            {newTab}
           </a>
         </h3>
         {project.tagline && <p className="mt-1 font-display text-accent">{project.tagline}</p>}
@@ -31,7 +32,8 @@ export function ProjectItem({ project }: { project: Project }) {
         </p>
         <p className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
           <a href={project.url} {...linkProps} className="text-accent underline-offset-4 hover:underline">
-            Besök sidan ↗<span className="sr-only"> (öppnas i ny flik)</span>
+            {t.projectUi.visit}
+            {newTab}
           </a>
           {project.repo && (
             <a
@@ -40,7 +42,8 @@ export function ProjectItem({ project }: { project: Project }) {
               className="inline-flex items-center gap-1.5 text-muted underline-offset-4 hover:text-ink hover:underline"
             >
               <GitHubIcon className="size-4" />
-              Källkod på GitHub ↗<span className="sr-only"> (öppnas i ny flik)</span>
+              {t.projectUi.source}
+              {newTab}
             </a>
           )}
         </p>
@@ -49,11 +52,11 @@ export function ProjectItem({ project }: { project: Project }) {
   );
 }
 
-export function ProjectList() {
+export function ProjectList({ t }: { t: Content }) {
   return (
     <ol className="divide-y divide-line">
-      {projects.map((project) => (
-        <ProjectItem key={project.id} project={project} />
+      {t.projects.map((project) => (
+        <ProjectItem key={project.id} t={t} project={project} />
       ))}
     </ol>
   );

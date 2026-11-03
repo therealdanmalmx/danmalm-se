@@ -1,0 +1,103 @@
+export type Locale = "sv" | "en";
+
+export type Experience = {
+  id: string;
+  title: string;
+  company: string;
+  place: string;
+  period: string;
+  // Shown as a label, e.g. "LIA" or "Volunteer".
+  kind?: string;
+  // Education entries don't count as places a skill was used.
+  education?: boolean;
+  summary: string;
+  details?: string[];
+  stack: string[];
+  featured?: boolean;
+};
+
+export type Project = {
+  id: string;
+  name: string;
+  // Live site; the project name links here.
+  url: string;
+  tagline?: string;
+  // What problem the project solves.
+  description: string;
+  stack: string[];
+  // Only set for public repositories.
+  repo?: string;
+};
+
+export type Skill = {
+  name: string;
+  // Stack labels in `experience` that count as this skill; defaults to [name].
+  match?: string[];
+  // Used at every workplace, without listing it in each stack.
+  everywhere?: boolean;
+  note?: string;
+};
+
+// Everything that differs between the Swedish and English page.
+export type Content = {
+  locale: Locale;
+  path: string;
+  meta: { title: string; description: string };
+  role: string;
+  location: string;
+  status: string;
+  availability: string;
+  newTab: string;
+  nav: {
+    label: string;
+    language: string;
+    about: string;
+    experience: string;
+    projects: string;
+    skills: string;
+    contact: string;
+  };
+  sections: {
+    about: string;
+    collaboration: string;
+    experience: string;
+    projects: string;
+    skills: string;
+    contact: string;
+  };
+  hero: {
+    // The emphasised part is highlighted in the accent colour.
+    headline: { before: string; emphasis: string; after: string };
+    greeting: string;
+    intro: string;
+    photoAlt: string;
+    projectLink: string;
+  };
+  about: string[];
+  tracks: {
+    heading: string;
+    employment: { heading: string; text: string; cta: string };
+    projects: { heading: string; text: string; cta: string };
+  };
+  experience: Experience[];
+  experienceUi: { readMore: string; showLess: string; downloadCv: string };
+  projects: Project[];
+  projectUi: { visit: string; source: string };
+  skills: {
+    daily: Skill[];
+    experienced: Skill[];
+    headings: { daily: string; experienced: string; languages: string };
+  };
+  languages: { name: string; level: string }[];
+  contact: {
+    heading: string;
+    summary: string;
+    email: string;
+    phone: string;
+    booking: string;
+    bookInterview: string;
+    bookProject: string;
+    altEmail: string;
+  };
+  footerGreeting: string;
+};

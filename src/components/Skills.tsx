@@ -1,12 +1,12 @@
-import { languages, skills, usedAt, type Skill } from "@/content/content";
+import { usedAt, type Content, type Skill } from "@/content/content";
 
-function SkillList({ heading, items }: { heading: string; items: Skill[] }) {
+function SkillList({ t, heading, items }: { t: Content; heading: string; items: Skill[] }) {
   return (
     <div>
       <h3 className="font-display text-xl font-semibold">{heading}</h3>
       <dl className="mt-6 space-y-3">
         {items.map((skill) => {
-          const places = usedAt(skill);
+          const places = usedAt(t, skill);
           return (
             <div key={skill.name} className="grid gap-x-6 sm:grid-cols-[12rem_1fr]">
               <dt className="font-display">
@@ -22,18 +22,19 @@ function SkillList({ heading, items }: { heading: string; items: Skill[] }) {
   );
 }
 
-export function Skills() {
+export function Skills({ t }: { t: Content }) {
+  const { headings } = t.skills;
   return (
     <div className="space-y-16">
-      <SkillList heading="Arbetar dagligen med" items={skills.daily} />
-      <SkillList heading="Erfarenhet av" items={skills.experienced} />
+      <SkillList t={t} heading={headings.daily} items={t.skills.daily} />
+      <SkillList t={t} heading={headings.experienced} items={t.skills.experienced} />
       <div>
-        <h3 className="font-display text-xl font-semibold">Språk</h3>
+        <h3 className="font-display text-xl font-semibold">{headings.languages}</h3>
         <p className="mt-6 leading-relaxed text-muted">
-          {languages.map((l, i) => (
+          {t.languages.map((l, i) => (
             <span key={l.name}>
               <span className="text-ink">{l.name}</span> ({l.level})
-              {i < languages.length - 1 && " · "}
+              {i < t.languages.length - 1 && " · "}
             </span>
           ))}
         </p>

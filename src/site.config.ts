@@ -1,18 +1,13 @@
-// Single source for contact details, availability and links.
+// Contact details and links shared by both languages.
+// Wording (role, availability, status) lives in src/content/sv.ts and en.ts.
 // TODO before launch: confirm email, phone and domain (see PRD section 8).
 export const siteConfig = {
   name: "Daniel Malmgren de Oliveira",
-  role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
-  location: "Borås / Västkusten / Remote",
   url: "https://danmalm.se",
 
   email: "me@danmalm.se",
   emailAlt: "danmalmx@gmail.com",
-  phone: { display: "+46 70-200 15 20", href: "+46702001520" },
-
-  // Switch to "Tillgänglig nu" once the LIA is over.
-  status: "Just nu: LIA inom .NET hos Centiro (dec 2026 – maj 2027).",
-  availability: "Öppen för tillsvidareanställning från maj 2027.",
+  phone: { display: "+46 72 200 15 20", href: "+46722001520" },
 
   booking: {
     interview:
@@ -21,8 +16,8 @@ export const siteConfig = {
       "https://cal.com/daniel-malmgren-de-oliveira-xin85a/30min?overlayCalendar=true",
   },
 
-  // Replace the file in public/cv/ to update the downloadable CV.
-  cv: "/cv/DMO_CV_se.pdf",
+  // One CV per language; replace the files in public/cv/ to update them.
+  cv: { sv: "/cv/DMO_CV_se.pdf", en: "/cv/DMO_CV_en.pdf" },
 
   linkedin: "https://www.linkedin.com/in/daniel-malmgren-de-oliveira",
   github: "https://github.com/therealdanmalmx",

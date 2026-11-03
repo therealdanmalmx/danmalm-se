@@ -1,4 +1,4 @@
-import { experience, type Experience } from "@/content/content";
+import type { Content, Experience } from "@/content/content";
 
 const monoClass = "font-mono text-xs leading-relaxed text-muted";
 
@@ -24,10 +24,11 @@ function Stack({ item, className }: { item: Experience; className: string }) {
   );
 }
 
-export function ExperienceList() {
+export function ExperienceList({ t }: { t: Content }) {
+  const ui = t.experienceUi;
   return (
     <ol className="divide-y divide-line">
-      {experience.map((item) => (
+      {t.experience.map((item) => (
         <li
           key={item.id}
           id={item.id}
@@ -42,8 +43,8 @@ export function ExperienceList() {
             {item.details && (
               <details open={item.featured} className="group mt-3">
                 <summary className="cursor-pointer text-sm text-accent">
-                  <span className="group-open:hidden">Läs mer +</span>
-                  <span className="hidden group-open:inline">Visa mindre −</span>
+                  <span className="group-open:hidden">{ui.readMore}</span>
+                  <span className="hidden group-open:inline">{ui.showLess}</span>
                 </summary>
                 <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-5 leading-relaxed marker:text-accent">
                   {item.details.map((d) => (
