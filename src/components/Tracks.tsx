@@ -1,5 +1,5 @@
 import { siteConfig } from "@/site.config";
-import { projects, tracks } from "@/content/content";
+import { tracks } from "@/content/content";
 
 export function Tracks() {
   return (
@@ -27,28 +27,6 @@ export function Tracks() {
           </a>
         </div>
       </div>
-
-      {projects.length > 0 && (
-        <div className="mt-16">
-          <h3 className="font-display text-sm tracking-widest text-muted uppercase">Utvalda projekt</h3>
-          <ul className="mt-6 divide-y divide-line">
-            {projects.map((p) => (
-              <li key={p.name} className="py-6">
-                <h4 className="font-display text-lg font-semibold">{p.name}</h4>
-                <p className="mt-2 leading-relaxed text-muted">{p.description}</p>
-                <p className="mt-2 font-display text-sm text-muted">{p.stack.join(" · ")}</p>
-                <p className="mt-3 flex gap-4 text-sm">
-                  {p.links.map((l) => (
-                    <a key={l.href} href={l.href} className="text-accent underline-offset-4 hover:underline">
-                      {l.label} →
-                    </a>
-                  ))}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </>
   );
 }

@@ -14,10 +14,16 @@ export type Experience = {
 };
 
 export type Project = {
+  id: string;
   name: string;
+  // Live site; the project name links here.
+  url: string;
+  tagline?: string;
+  // What problem the project solves.
   description: string;
   stack: string[];
-  links: { label: string; href: string }[];
+  // Only set for public repositories.
+  repo?: string;
 };
 
 export const hero = {
@@ -268,7 +274,18 @@ export const languages = [
 ];
 
 // Rendered only when non-empty.
-export const projects: Project[] = [];
+export const projects: Project[] = [
+  {
+    id: "gethubbers",
+    name: "GetHubbers",
+    url: "https://gethubbers.com",
+    tagline: "Hitta utvecklare där utvecklare finns.",
+    description:
+      "Rekryterare och team som letar utvecklare lokalt får ofta gå via mellanhänder. GetHubbers söker direkt i GitHubs API efter utvecklare i en stad eller ett helt land och filtrerar på programmeringsspråk – i tio europeiska länder, med gränssnitt på flera språk.",
+    stack: ["React", "TypeScript", "Vite", "GitHub API", "i18next"],
+    repo: "https://github.com/therealdanmalmx/getHubbers_new",
+  },
+];
 
 export const contactHeading = "Låt oss ta en kaffe och diskutera nästa steg.";
 

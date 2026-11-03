@@ -1,8 +1,10 @@
 import { siteConfig } from "@/site.config";
+import { projects } from "@/content/content";
 
 const nav = [
   { href: "#om-mig", label: "Om mig" },
   { href: "#erfarenhet", label: "Erfarenhet" },
+  ...(projects.length > 0 ? [{ href: "#projekt", label: "Projekt" }] : []),
   { href: "#fardigheter", label: "Kompetens" },
   { href: "#kontakt", label: "Kontakt" },
 ];
