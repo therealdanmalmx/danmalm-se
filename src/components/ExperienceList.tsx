@@ -41,7 +41,7 @@ export function ExperienceList({ t }: { t: Content }) {
             </h3>
             <p className="mt-3 max-w-3xl leading-relaxed text-muted">{item.summary}</p>
             {item.details && (
-              <details open={item.featured} className="group mt-3">
+              <details className="group mt-3">
                 <summary className="cursor-pointer text-sm text-accent">
                   <span className="group-open:hidden">{ui.readMore}</span>
                   <span className="hidden group-open:inline">{ui.showLess}</span>

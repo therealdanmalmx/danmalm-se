@@ -13,7 +13,6 @@ export type Experience = {
   summary: string;
   details?: string[];
   stack: string[];
-  featured?: boolean;
 };
 
 export type Project = {

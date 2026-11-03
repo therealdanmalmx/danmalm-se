@@ -151,7 +151,6 @@ export const sv: Content = {
       company: "Consid",
       place: "Borås",
       period: "jan 2023 – jul 2024",
-      featured: true,
       summary: "Interna verktyg och kunduppdrag med mätbar affärsnytta.",
       details: [
         "Byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
@@ -167,7 +166,6 @@ export const sv: Content = {
       company: "Ellos Group",
       place: "Borås",
       period: "aug 2021 – jan 2023",
-      featured: true,
       summary:
         "Återanvändbara komponenter för fyra webbshoppar som skulle hålla under kampanjer och Black Friday.",
       details: [
