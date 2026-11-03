@@ -40,7 +40,7 @@ export const en: Content = {
 
   hero: {
     headline: {
-      before: "The business economist who found a home in code – building software with ",
+      before: "The business developer who found a home in code – building software with ",
       emphasis: "business value",
       after: " as the compass.",
     },
@@ -51,7 +51,7 @@ export const en: Content = {
   },
 
   about: [
-    "I'm a business economist turned developer – I switched careers a week before the pandemic hit in 2020. My only regret is not doing it sooner.",
+    "Before I wrote code, I worked in business development, marketing and strategy. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
     "Vue, React and TypeScript are my home turf. Now I'm adding C# and .NET to own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
   ],
