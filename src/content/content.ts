@@ -273,4 +273,4 @@ export const projects: Project[] = [];
 export const contactHeading = "Låt oss ta en kaffe och diskutera nästa steg.";
 
 export const contactSummary =
-  "Utvecklare sedan 2020 · e-handel, fintech, IoT och konsultuppdrag · frontend med .NET-backend – just nu på Centiro.";
+  "Utvecklare sedan 2020 · e-handel, offentlig sektor, IoT och konsultuppdrag · frontend med .NET-backend – just nu på Centiro.";
