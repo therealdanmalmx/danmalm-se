@@ -28,7 +28,7 @@ export function ExperienceList({ t }: { t: Content }) {
   const ui = t.experienceUi;
   return (
     <ol className="divide-y divide-line">
-      {t.experience.map((item) => (
+      {t.experience.filter((item) => !item.hidden).map((item) => (
         <li
           key={item.id}
           id={item.id}

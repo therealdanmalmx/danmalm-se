@@ -10,6 +10,8 @@ export type Experience = {
   kind?: string;
   // Education entries don't count as places a skill was used.
   education?: boolean;
+  // Kept in the content but not shown on the page.
+  hidden?: boolean;
   summary: string;
   details?: string[];
   stack: string[];

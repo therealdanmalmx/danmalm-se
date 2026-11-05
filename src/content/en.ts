@@ -16,7 +16,7 @@ export const en: Content = {
   },
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
   location: "Borås / Gothenburg area / Remote",
-  status: "Currently: .NET internship at Centiro (Dec 2026 – May 2027).",
+  status: "Currently: part-time front-end developer at Centiro.",
   availability: "Open to smaller projects now, and permanent roles from May 2027.",
   newTab: "(opens in a new tab)",
 

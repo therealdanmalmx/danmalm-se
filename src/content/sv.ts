@@ -11,7 +11,7 @@ export const sv: Content = {
   role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
   location: "Borås / Göteborg med omnejd / Remote",
   // Switch to "Tillgänglig nu" once the LIA is over.
-  status: "Just nu: LIA inom .NET hos Centiro (dec 2026 – maj 2027).",
+  status: "Just nu: frontendutvecklare (deltid) hos Centiro.",
   availability: "Öppen för mindre projekt redan nu och tillsvidareanställning från maj 2027.",
   newTab: "(öppnas i ny flik)",
 
@@ -68,13 +68,14 @@ export const sv: Content = {
   experience: [
     {
       id: "centiro",
+      hidden: true,
       title: "Backendutvecklare",
       company: "Centiro",
       place: "Borås",
       period: "dec 2026 – maj 2027",
       kind: "LIA",
       summary: "Pågående LIA med fokus på C# och .NET.",
-      stack: ["C#", ".NET"],
+      stack: ["C#", ".NET", "Azure DevOps", "Claude Code"],
     },
     {
       id: "centiro-deltid",

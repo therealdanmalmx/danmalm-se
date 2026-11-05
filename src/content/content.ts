@@ -11,7 +11,7 @@ export const content: Record<Locale, Content> = { sv, en };
 export function usedAt(t: Content, skill: Skill): string[] {
   const labels = skill.match ?? [skill.name];
   const companies = t.experience
-    .filter((e) => !e.education && (skill.everywhere || e.stack.some((s) => labels.includes(s))))
+    .filter((e) => !e.hidden && !e.education && (skill.everywhere || e.stack.some((s) => labels.includes(s))))
     .map((e) => e.company);
   // Centiro appears twice (part-time and LIA).
   return [...new Set(companies)];
