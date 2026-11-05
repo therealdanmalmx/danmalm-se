@@ -48,7 +48,7 @@ export const sv: Content = {
   about: [
     "Jag är civilekonom som blev utvecklare – en vecka innan pandemin bröt ut 2020. Det enda jag ångrar är att jag inte bytte bana tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
-    "Vue, React och TypeScript är min hemmaplan. Nu bygger jag på med C# och .NET för att ta helhetsansvar från gränssnitt till API. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
+    "Vue, React och TypeScript är min hemmaplan. Nu bygger jag på med C# och .NET för att ta helhetsansvar från gränssnitt till API. Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
   ],
 
   tracks: {
@@ -84,7 +84,7 @@ export const sv: Content = {
       period: "sep – dec 2026",
       summary:
         "Uppdaterade ramverksversionen och implementerade företagets designsystem korrekt.",
-      stack: ["Angular", "SQL Server", "Azure DevOps", "Claude Code"],
+      stack: ["Angular", "Azure DevOps", "Octopus Deploy", "Claude Code"],
     },
     {
       id: "avarda",
@@ -111,7 +111,7 @@ export const sv: Content = {
       kind: "Utbildning",
       education: true,
       summary: "Tvåårig utbildning i C#, .NET, Entity Framework och databaser.",
-      stack: ["C#", ".NET", "Entity Framework", "SQL Server"],
+      stack: ["C#", ".NET", "Entity Framework", "SQL", "Claude Code", "GitHub Copilot"],
     },
     {
       id: "one-sky",
@@ -228,11 +228,13 @@ export const sv: Content = {
       { name: "React", match: ["React", "React Native"] },
       { name: "TypeScript" },
       { name: "JavaScript", match: ["TypeScript", "Vue", "React"] },
-      { name: "C# / .NET", match: ["C#", ".NET"], note: "fördjupas just nu (YH)" },
+      { name: "C# / .NET", match: ["C#", ".NET"] },
       { name: "Tailwind" },
       { name: "Next.js" },
       { name: "Nuxt" },
       { name: "REST" },
+      { name: "Claude Code" },
+      { name: "GitHub Copilot" },
     ],
     experienced: [
       { name: "ASP.NET", match: ["ASP.NET"] },
@@ -247,6 +249,7 @@ export const sv: Content = {
       { name: "Amplience" },
       { name: "Docker" },
       { name: "Azure DevOps" },
+      { name: "Octopus Deploy" },
       { name: "Git", everywhere: true },
     ],
     headings: {

@@ -53,7 +53,7 @@ export const en: Content = {
   about: [
     "Before I wrote code, I worked in business development, marketing and strategy. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
-    "Vue, React and TypeScript are my home turf. Now I'm adding C# and .NET to own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
+    "Vue, React and TypeScript are my home turf. Now I'm adding C# and .NET to own the whole chain, from interface to API. I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
   ],
 
   tracks: {
@@ -191,9 +191,7 @@ export const en: Content = {
   projectUi: { visit: "Visit site ↗", source: "Source on GitHub ↗" },
 
   skills: {
-    daily: sv.skills.daily.map((s) =>
-      s.name === "C# / .NET" ? { ...s, note: "currently deepening (YH programme)" } : s,
-    ),
+    daily: sv.skills.daily,
     experienced: sv.skills.experienced,
     headings: {
       daily: "Work with daily",
