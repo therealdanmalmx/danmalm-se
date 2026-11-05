@@ -12,12 +12,12 @@ export const en: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Full-stack developer",
     description:
-      "Full-stack developer · React, Vue, TypeScript & .NET. Open to permanent roles from May 2027. Borås / West Sweden / Remote.",
+      "Full-stack developer · React, Vue, TypeScript & .NET. Open to smaller projects now, and permanent roles from May 2027. Borås / Gothenburg area / Remote.",
   },
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
-  location: "Borås / West Sweden / Remote",
-  status: "Currently: .NET internship (LIA) at Centiro (Dec 2026 – May 2027).",
-  availability: "Open to permanent roles from May 2027.",
+  location: "Borås / Gothenburg area / Remote",
+  status: "Currently: .NET internship at Centiro (Dec 2026 – May 2027).",
+  availability: "Open to smaller projects now, and permanent roles from May 2027.",
   newTab: "(opens in a new tab)",
 
   nav: {
@@ -60,7 +60,7 @@ export const en: Content = {
     heading: "How would you like to work with me?",
     employment: {
       heading: "Employment",
-      text: "I'm looking for a permanent role as a full-stack, back-end or front-end developer from May 2027 – in Borås, along Sweden's west coast or remote.",
+      text: "I'm looking for a permanent role as a full-stack, back-end or front-end developer from May 2027 – in Borås, the Gothenburg area or remote.",
       cta: "Book a call",
     },
     projects: {
@@ -75,7 +75,7 @@ export const en: Content = {
       ...base["centiro"],
       title: "Back-end developer",
       period: "Dec 2026 – May 2027",
-      kind: "Internship (LIA)",
+      kind: "Internship",
       summary: "Ongoing internship focused on C# and .NET.",
     },
     {
@@ -88,7 +88,7 @@ export const en: Content = {
       ...base["avarda"],
       title: "Back-end developer",
       period: "May – Jun 2026",
-      kind: "Internship (LIA)",
+      kind: "Internship",
       summary:
         "Rebuilt the controller behind the consumer-loan application flow in .NET/Umbraco.",
       details: [
@@ -120,7 +120,8 @@ export const en: Content = {
       place: "Remote",
       period: "Dec 2024 – Apr 2025",
       kind: "Volunteer",
-      summary: "Helped rebuild version 2 of the platform in Vue 3 with reusable components.",
+      summary:
+        "UK-based platform that connects volunteers with startups so they can gain work experience on real projects. Worked remotely with the development team and helped migrate the platform from Vue 2 to Vue 3.",
     },
     {
       ...base["nexer"],

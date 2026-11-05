@@ -6,13 +6,13 @@ export const sv: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Fullstackutvecklare",
     description:
-      "Fullstackutvecklare · React, Vue, TypeScript & .NET. Öppen för tillsvidareanställning från maj 2027. Borås / Västkusten / Remote.",
+      "Fullstackutvecklare · React, Vue, TypeScript & .NET. Öppen för mindre projekt redan nu och tillsvidareanställning från maj 2027. Borås / Göteborg med omnejd / Remote.",
   },
   role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
-  location: "Borås / Västkusten / Remote",
+  location: "Borås / Göteborg med omnejd / Remote",
   // Switch to "Tillgänglig nu" once the LIA is over.
   status: "Just nu: LIA inom .NET hos Centiro (dec 2026 – maj 2027).",
-  availability: "Öppen för tillsvidareanställning från maj 2027.",
+  availability: "Öppen för mindre projekt redan nu och tillsvidareanställning från maj 2027.",
   newTab: "(öppnas i ny flik)",
 
   nav: {
@@ -55,7 +55,7 @@ export const sv: Content = {
     heading: "Hur vill du samarbeta med mig?",
     employment: {
       heading: "Anställning",
-      text: "Jag söker en fast tjänst som fullstack-, back- eller frontendutvecklare från maj 2027, i Borås, längs Västkusten eller remote.",
+      text: "Jag söker en fast tjänst som fullstack-, back- eller frontendutvecklare från maj 2027, i Borås, Göteborg med omnejd eller remote.",
       cta: "Boka samtal",
     },
     projects: {
@@ -132,7 +132,7 @@ export const sv: Content = {
       period: "dec 2024 – apr 2025",
       kind: "Volontär",
       summary:
-        "Deltog i ombyggnaden av plattformens version 2 i Vue 3 med återanvändbara komponenter.",
+        "Brittisk plattform som kopplar ihop volontärer med startups, så att de får arbetslivserfarenhet i riktiga projekt. Arbetade på distans med utvecklingsteamet och deltog i ombyggnaden av plattformen från Vue 2 till Vue 3.",
       stack: ["Vue 3", "TypeScript", "Pinia", "Tailwind", "REST"],
     },
     {
