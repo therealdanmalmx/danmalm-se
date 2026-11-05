@@ -45,7 +45,7 @@ export const en: Content = {
       after: " as my compass.",
     },
     greeting: "Hi, I'm",
-    intro: "a full-stack developer since 2020. I start with why – then I build it.",
+    intro: "a developer since 2020 – started in front-end, now full-stack. I start with why – then I build it.",
     photoAlt: "Portrait of Daniel Malmgren de Oliveira",
     projectLink: "or discuss a project →",
   },

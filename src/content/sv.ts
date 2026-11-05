@@ -40,7 +40,7 @@ export const sv: Content = {
       after: " som kompass.",
     },
     greeting: "Hej, jag heter",
-    intro: "fullstackutvecklare sedan 2020. Jag börjar med varför – sen bygger jag det.",
+    intro: "utvecklare sedan 2020 – började i frontend, nu fullstack. Jag börjar med varför – sen bygger jag det.",
     photoAlt: "Porträtt av Daniel Malmgren de Oliveira",
     projectLink: "eller diskutera ett projekt →",
   },
