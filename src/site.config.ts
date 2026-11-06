@@ -13,7 +13,7 @@ export const siteConfig = {
     interview:
       "https://cal.com/daniel-malmgren-de-oliveira-xin85a/30min?overlayCalendar=true",
     project:
-      "https://cal.com/daniel-malmgren-de-oliveira-xin85a/30min?overlayCalendar=true",
+      "https://cal.com/daniel-malmgren-de-oliveira-xin85a/15min?overlayCalendar=true",
   },
 
   // One CV per language; replace the files in public/cv/ to update them.

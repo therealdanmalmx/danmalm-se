@@ -37,7 +37,7 @@ export function Hero({ t }: { t: Content }) {
           >
             {t.tracks.employment.cta}
           </a>
-          <a href="#samarbete" className="text-muted underline-offset-4 transition-colors hover:text-ink hover:underline">
+          <a href={siteConfig.booking.project} className="text-muted underline-offset-4 transition-colors hover:text-ink hover:underline">
             {hero.projectLink}
           </a>
           <SocialLinks t={t} className="text-muted" />

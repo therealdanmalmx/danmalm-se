@@ -345,7 +345,7 @@ export const sv: Content = {
       "Har du något som behöver byggas eller lösas – eller en roll att fylla? Hör av dig, så tar vi det därifrån.",
     email: "E-post",
     phone: "Telefon",
-    booking: "Boka möte · 30 min",
+    booking: "Boka möte",
     bookInterview: "Samtal om anställning →",
     bookProject: "Projektmöte →",
     altEmail: "Alternativ e-post:",

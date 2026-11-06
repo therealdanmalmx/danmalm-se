@@ -281,7 +281,7 @@ export const en: Content = {
       "Got something that needs building or fixing – or a role to fill? Get in touch and we'll take it from there.",
     email: "Email",
     phone: "Phone",
-    booking: "Book a meeting · 30 min",
+    booking: "Book a meeting",
     bookInterview: "Talk about a role →",
     bookProject: "Project meeting →",
     altEmail: "Alternative email:",
