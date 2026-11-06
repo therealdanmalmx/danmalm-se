@@ -13,7 +13,7 @@ function SkillList({ t, heading, items }: { t: Content; heading: string; items: 
                 {skill.name}
                 {skill.note && <span className="block text-sm text-accent">{skill.note}</span>}
               </dt>
-              <dd className="text-sm leading-relaxed text-muted">{places.join(", ")}</dd>
+              <dd className="text-sm leading-relaxed text-muted">{places.length > 0 ? places.join(", ") : skill.context}</dd>
             </div>
           );
         })}

@@ -24,11 +24,39 @@ function Stack({ item, className }: { item: Experience; className: string }) {
   );
 }
 
+// Paid work first, then volunteer work and education under their own headings,
+// so the longest roles aren't pushed down by short or unpaid entries.
 export function ExperienceList({ t }: { t: Content }) {
   const ui = t.experienceUi;
+  const shown = t.experience.filter((item) => !item.hidden);
+  const groups = [
+    { heading: null, items: shown.filter((e) => !e.volunteer && !e.education) },
+    { heading: ui.volunteerHeading, items: shown.filter((e) => e.volunteer) },
+    { heading: ui.educationHeading, items: shown.filter((e) => e.education) },
+  ].filter((g) => g.items.length > 0);
+  return (
+    <div className="space-y-12">
+      {groups.map((g) => (
+        <div key={g.heading ?? "work"}>
+          {g.heading && (
+            <h3 className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
+              {g.heading}
+            </h3>
+          )}
+          <ItemList items={g.items} t={t} nested={g.heading !== null} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Entries under a group heading sit one heading level below it.
+function ItemList({ items, t, nested }: { items: Experience[]; t: Content; nested: boolean }) {
+  const ui = t.experienceUi;
+  const Title = nested ? "h4" : "h3";
   return (
     <ol className="divide-y divide-line">
-      {t.experience.filter((item) => !item.hidden).map((item) => (
+      {items.map((item) => (
         <li
           key={item.id}
           id={item.id}
@@ -36,9 +64,9 @@ export function ExperienceList({ t }: { t: Content }) {
         >
           <Meta item={item} />
           <div>
-            <h3 className="font-display text-xl font-semibold">
+            <Title className="font-display text-xl font-semibold">
               {item.title} <span className="text-muted">·</span> {item.company}
-            </h3>
+            </Title>
             <p className="mt-3 max-w-3xl leading-relaxed text-muted">{item.summary}</p>
             {item.details && (
               <details className="group mt-3">

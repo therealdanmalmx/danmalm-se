@@ -40,7 +40,7 @@ export const sv: Content = {
       after: " som kompass.",
     },
     greeting: "Hej, jag heter",
-    intro: "utvecklare sedan 2020 – började i frontend, nu fullstack. Jag börjar med varför – sen bygger jag det.",
+    intro: "utvecklare sedan 2020, som började i frontend och nu jobbar fullstack. Jag börjar med varför, sen bygger jag det.",
     photoAlt: "Porträtt av Daniel Malmgren de Oliveira",
     projectLink: "eller diskutera ett projekt →",
   },
@@ -48,7 +48,8 @@ export const sv: Content = {
   about: [
     "Jag är civilekonom och har jobbat många år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. En vecka innan pandemin bröt ut 2020 bytte jag bana till utveckling. Det enda jag ångrar är att jag inte gjorde det tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
-    "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
+    "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
+    "Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut.",
   ],
 
   tracks: {
@@ -84,7 +85,7 @@ export const sv: Content = {
       place: "Borås",
       period: "sep – dec 2026",
       summary:
-        "Uppdaterade ramverksversionen och implementerade företagets designsystem korrekt.",
+        "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen.",
       stack: ["Angular", "Azure DevOps", "Octopus Deploy", "Claude Code"],
     },
     {
@@ -116,6 +117,7 @@ export const sv: Content = {
     },
     {
       id: "one-sky",
+      volunteer: true,
       title: "Fullstackutvecklare",
       company: "One Sky Collective",
       place: "Distans",
@@ -127,6 +129,7 @@ export const sv: Content = {
     },
     {
       id: "skilledup",
+      volunteer: true,
       title: "Frontendutvecklare",
       company: "SkilledUp Life",
       place: "Distans",
@@ -143,7 +146,7 @@ export const sv: Content = {
       place: "Borås",
       period: "okt – dec 2024",
       summary:
-        "Projekt med backend i C#/.NET och frontend i React, med fokus på integrationen däremellan.",
+        "Bokningssystem för tvättstugor i fastigheter som saknade en digital lösning – backend i C#/.NET och frontend i React.",
       stack: ["React", "TypeScript", "C#", ".NET", "Entity Framework", "MongoDB", "Node.js"],
     },
     {
@@ -152,7 +155,8 @@ export const sv: Content = {
       company: "Consid",
       place: "Borås",
       period: "jan 2023 – jul 2024",
-      summary: "Interna verktyg och kunduppdrag med mätbar affärsnytta.",
+      summary:
+        "Interna verktyg och kunduppdrag med mätbar affärsnytta – bland annat ett onboardingverktyg som sparar över 10 timmar per nyanställd.",
       details: [
         "Vidareutvecklade en kundportal för en svensk myndighet – komponenter, funktioner och prestanda i Vue och TypeScript, samt API:er i .NET.",
         "Byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
@@ -207,6 +211,8 @@ export const sv: Content = {
     readMore: "Läs mer +",
     showLess: "Visa mindre −",
     downloadCv: "Ladda ner CV (PDF) ↓",
+    volunteerHeading: "Volontärarbete",
+    educationHeading: "Utbildning",
   },
 
   // The section is rendered only when non-empty.
@@ -228,15 +234,14 @@ export const sv: Content = {
     daily: [
       { name: "Vue 2 & 3", match: ["Vue", "Vue 3"] },
       { name: "React", match: ["React", "React Native"] },
-      { name: "TypeScript" },
-      { name: "JavaScript", match: ["TypeScript", "Vue", "React"] },
+      { name: "TypeScript / JavaScript", match: ["TypeScript", "JavaScript"] },
       { name: "C# / .NET", match: ["C#", ".NET"] },
       { name: "Tailwind" },
       { name: "Next.js" },
       { name: "Nuxt" },
       { name: "REST" },
       { name: "Claude Code" },
-      { name: "GitHub Copilot" },
+      { name: "GitHub Copilot", context: "YH och egna projekt" },
     ],
     experienced: [
       { name: "ASP.NET", match: ["ASP.NET"] },
@@ -247,12 +252,11 @@ export const sv: Content = {
       { name: "MongoDB" },
       { name: "GraphQL" },
       { name: "Umbraco" },
-      { name: "Strapi" },
+      { name: "Strapi", context: "Egna projekt" },
       { name: "Amplience" },
-      { name: "Docker" },
+      { name: "Docker", context: "Egna projekt" },
       { name: "Azure DevOps" },
       { name: "Octopus Deploy" },
-      { name: "Git", everywhere: true },
     ],
     headings: {
       daily: "Arbetar dagligen med",
@@ -271,7 +275,7 @@ export const sv: Content = {
   contact: {
     heading: "Låt oss ta en kaffe och diskutera nästa steg.",
     summary:
-      "Utvecklare sedan 2020 · e-handel, offentlig sektor, IoT och konsultuppdrag · frontend med .NET-backend – just nu på Centiro.",
+      "Har du något som behöver byggas eller lösas – eller en roll att fylla? Hör av dig, så tar vi det därifrån.",
     email: "E-post",
     phone: "Telefon",
     booking: "Boka möte · 30 min",

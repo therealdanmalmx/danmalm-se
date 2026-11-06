@@ -45,7 +45,7 @@ export const en: Content = {
       after: " as my compass.",
     },
     greeting: "Hi, I'm",
-    intro: "a developer since 2020 – started in front-end, now full-stack. I start with why – then I build it.",
+    intro: "a developer since 2020 who started in front-end and now works full-stack. I start with why, then I build it.",
     photoAlt: "Portrait of Daniel Malmgren de Oliveira",
     projectLink: "or discuss a project →",
   },
@@ -53,7 +53,8 @@ export const en: Content = {
   about: [
     "Before I wrote code, I spent many years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
-    "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
+    "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
+    "I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships.",
   ],
 
   tracks: {
@@ -82,7 +83,7 @@ export const en: Content = {
       ...base["centiro-deltid"],
       title: "Front-end developer (part-time)",
       period: "Sep – Dec 2026",
-      summary: "Upgraded the framework version and implemented the company's design system.",
+      summary: "Upgraded the Angular version and rolled out the company's design system in the application.",
     },
     {
       ...base["avarda"],
@@ -128,13 +129,14 @@ export const en: Content = {
       title: "Front-end developer",
       period: "Oct – Dec 2024",
       summary:
-        "Project with a C#/.NET back end and a React front end, focused on the integration between them.",
+        "Booking system for laundry rooms in buildings that lacked a digital solution – C#/.NET back end and React front end.",
     },
     {
       ...base["consid"],
       title: "Front-end developer",
       period: "Jan 2023 – Jul 2024",
-      summary: "Internal tools and client projects with measurable business value.",
+      summary:
+        "Internal tools and client projects with measurable business value – including an onboarding tool that saves over 10 hours per new hire.",
       details: [
         "Developed a customer portal for a Swedish government agency – components, features and performance in Vue and TypeScript, plus APIs in .NET.",
         "Built an internal onboarding tool for Consid with sign-in and status tracking – saving over 10 hours per new hire.",
@@ -179,6 +181,8 @@ export const en: Content = {
     readMore: "Read more +",
     showLess: "Show less −",
     downloadCv: "Download CV (PDF) ↓",
+    volunteerHeading: "Volunteer work",
+    educationHeading: "Education",
   },
 
   projects: [
@@ -192,8 +196,12 @@ export const en: Content = {
   projectUi: { visit: "Visit site ↗", source: "Source on GitHub ↗" },
 
   skills: {
-    daily: sv.skills.daily,
-    experienced: sv.skills.experienced,
+    daily: sv.skills.daily.map((s) =>
+      s.name === "GitHub Copilot" ? { ...s, context: "YH programme and personal projects" } : s,
+    ),
+    experienced: sv.skills.experienced.map((s) =>
+      s.context === "Egna projekt" ? { ...s, context: "Personal projects" } : s,
+    ),
     headings: {
       daily: "Work with daily",
       experienced: "Experienced with",
@@ -211,7 +219,7 @@ export const en: Content = {
   contact: {
     heading: "Let's grab a coffee and talk about next steps.",
     summary:
-      "Developer since 2020 · e-commerce, public sector, IoT and consulting · front end with a .NET back end – currently at Centiro.",
+      "Got something that needs building or fixing – or a role to fill? Get in touch and we'll take it from there.",
     email: "Email",
     phone: "Phone",
     booking: "Book a meeting · 30 min",

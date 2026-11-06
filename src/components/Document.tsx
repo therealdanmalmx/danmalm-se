@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { siteConfig } from "@/site.config";
 import { content, type Content } from "@/content/content";
+import { ogPath, ogSize } from "@/components/OgImage";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,8 +29,9 @@ export function pageMetadata(t: Content): Metadata {
       url: t.path,
       title: siteConfig.name,
       description: t.meta.description,
-      images: [{ url: "/images/daniel.jpg", width: 576, height: 576, alt: siteConfig.name }],
+      images: [{ url: ogPath(t), ...ogSize, alt: t.meta.title }],
     },
+    twitter: { card: "summary_large_image" },
   };
 }
 

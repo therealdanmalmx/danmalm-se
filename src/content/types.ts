@@ -10,6 +10,8 @@ export type Experience = {
   kind?: string;
   // Education entries don't count as places a skill was used.
   education?: boolean;
+  // Listed under the volunteer heading, after paid work.
+  volunteer?: boolean;
   // Kept in the content but not shown on the page.
   hidden?: boolean;
   summary: string;
@@ -36,6 +38,8 @@ export type Skill = {
   match?: string[];
   // Used at every workplace, without listing it in each stack.
   everywhere?: boolean;
+  // Shown instead of the company list when no workplace stack includes the skill.
+  context?: string;
   note?: string;
 };
 
@@ -81,7 +85,13 @@ export type Content = {
     projects: { heading: string; text: string; cta: string };
   };
   experience: Experience[];
-  experienceUi: { readMore: string; showLess: string; downloadCv: string };
+  experienceUi: {
+    readMore: string;
+    showLess: string;
+    downloadCv: string;
+    volunteerHeading: string;
+    educationHeading: string;
+  };
   projects: Project[];
   projectUi: { visit: string; source: string };
   skills: {
