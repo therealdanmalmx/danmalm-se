@@ -6,13 +6,13 @@ export const sv: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Fullstackutvecklare",
     description:
-      "Fullstackutvecklare · React, Vue, TypeScript & .NET. Öppen för mindre projekt redan nu och tillsvidareanställning från maj 2027. Borås / Göteborg med omnejd / Remote.",
+      "Fullstackutvecklare · React, Vue, TypeScript & .NET. Tar emot uppdrag redan nu – öppen för tillsvidareanställning från maj 2027. Borås / Göteborg med omnejd / Remote.",
   },
   role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
   location: "Borås / Göteborg med omnejd / Remote",
   // Switch to "Tillgänglig nu" once the LIA is over.
-  status: "Just nu: frontendutvecklare (deltid) hos Centiro.",
-  availability: "Öppen för mindre projekt redan nu och tillsvidareanställning från maj 2027.",
+  status: "Just nu: frontendutvecklare hos Centiro.",
+  availability: "Tar emot uppdrag redan nu – öppen för tillsvidareanställning från maj 2027.",
   newTab: "(öppnas i ny flik)",
 
   nav: {
@@ -48,7 +48,7 @@ export const sv: Content = {
   about: [
     "Jag är civilekonom som blev utvecklare – en vecka innan pandemin bröt ut 2020. Det enda jag ångrar är att jag inte bytte bana tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
-    "Vue, React och TypeScript är min hemmaplan. Nu bygger jag på med C# och .NET för att ta helhetsansvar från gränssnitt till API. Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
+    "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
   ],
 
   tracks: {
@@ -60,7 +60,7 @@ export const sv: Content = {
     },
     projects: {
       heading: "Projekt & samarbeten",
-      text: "Öppen för utvalda projekt och samarbeten – från luddig idé till fungerande MVP.",
+      text: "För mindre företag som behöver något byggt, fixat eller förbättrat – från luddig idé till fungerande MVP, eller att få det ni redan har att fungera bättre.",
       cta: "Boka projektmöte",
     },
   },

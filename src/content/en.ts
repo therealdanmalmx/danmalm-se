@@ -12,12 +12,12 @@ export const en: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Full-stack developer",
     description:
-      "Full-stack developer · React, Vue, TypeScript & .NET. Open to smaller projects now, and permanent roles from May 2027. Borås / Gothenburg area / Remote.",
+      "Full-stack developer · React, Vue, TypeScript & .NET. Taking on projects now – open to permanent roles from May 2027. Borås / Gothenburg area / Remote.",
   },
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
   location: "Borås / Gothenburg area / Remote",
-  status: "Currently: part-time front-end developer at Centiro.",
-  availability: "Open to smaller projects now, and permanent roles from May 2027.",
+  status: "Currently: front-end developer at Centiro.",
+  availability: "Taking on projects now – open to permanent roles from May 2027.",
   newTab: "(opens in a new tab)",
 
   nav: {
@@ -53,7 +53,7 @@ export const en: Content = {
   about: [
     "Before I wrote code, I worked in business development, marketing and strategy. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
-    "Vue, React and TypeScript are my home turf. Now I'm adding C# and .NET to own the whole chain, from interface to API. I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
+    "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
   ],
 
   tracks: {
@@ -65,7 +65,7 @@ export const en: Content = {
     },
     projects: {
       heading: "Projects & collaborations",
-      text: "Open to selected projects and collaborations – from fuzzy idea to working MVP.",
+      text: "For smaller companies that need something built, fixed or improved – from fuzzy idea to working MVP, or making what you already have work better.",
       cta: "Book a project meeting",
     },
   },
