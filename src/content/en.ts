@@ -139,7 +139,7 @@ export const en: Content = {
         "Internal tools and client projects with measurable business value – including an onboarding tool that saves over 10 hours per new hire.",
       details: [
         "Developed a customer portal for a Swedish government agency – components, features and performance in Vue and TypeScript, plus APIs in .NET.",
-        "Built an internal onboarding tool for Consid with sign-in and status tracking – saving over 10 hours per new hire.",
+        "Helped build an internal onboarding tool for Consid with sign-in and status tracking – saving over 10 hours per new hire.",
         "Client project: an in-house digital annual report replaced an external service – production costs nearly halved.",
         "Modernised a custom CMS with reusable components.",
         "Contributed to a consultant-matching portal with sign-up, dashboards and advanced search.",
@@ -187,13 +187,72 @@ export const en: Content = {
 
   projects: [
     {
+      ...baseProjects["consid-onboarding"],
+      name: "Onboarding tool for Consid",
+      tagline: "Over 10 hours saved per new hire – around 1,000 hours a year.",
+      caseStudy: {
+        problem:
+          "Onboarding around 100 new hires a year was handled with checklists, emails and spreadsheets. HR spent a lot of time keeping it all together and chasing status.",
+        solution:
+          "As part of a team, we built a web tool where every new hire has their own onboarding plan, with sign-in, status per step and filtering. I helped choose the tech and developed the tool in React and Next.js.",
+        result:
+          "HR can see at a glance where each person stands. The tool replaced the manual process and saves over 10 hours per new hire.",
+      },
+    },
+    {
+      ...baseProjects["consid-annual-report"],
+      name: "Digital annual report",
+      tagline: "Costs halved in the very first year.",
+      caseStudy: {
+        problem:
+          "The client paid every year for an external service to present its annual report online, with limited control over content and layout.",
+        solution:
+          "A reusable template in Umbraco where an administrator adds text, images, video, charts and links to documents. The annual report page is then generated automatically.",
+        result:
+          "The solution replaced the external service, saved the client 50% in its first year and gave them more control over their digital reporting.",
+      },
+    },
+    {
+      ...baseProjects["ellos-value-chain"],
+      name: "The value chain on the product page",
+      tagline: "Where and what is the product made of? Now customers can see it directly.",
+      caseStudy: {
+        problem:
+          "Customers and new regulations demanded more insight into how products are made – but information about materials, certifications and suppliers never reached the customer.",
+        solution:
+          "I built a larger component in Vue and Nuxt that shows the product's journey through the value chain: origin of materials, certifications, ratings and suppliers.",
+        result:
+          "Customers can see where and what the products are made of, which builds trust and helps Ellos Group meet transparency requirements.",
+      },
+    },
+    {
+      ...baseProjects["consid-cv-portal"],
+      name: "CV and consultant portal",
+      tagline: "From CVs in SharePoint to searchable consultant matching.",
+      caseStudy: {
+        problem:
+          "All CVs were uploaded to a SharePoint portal with no proper search or filtering. Finding the right consultant for an assignment took time.",
+        solution:
+          "In a Scrum team, we built a simplified take on Cinode: consultants add their experience, skills and availability and can save tailored CVs. Consultant managers and sales filter by city, region and country, and search in detail on skills, experience, certifications and languages.",
+        result:
+          "Consultant managers and sales get an instant overview of who is available and find the right profile for an assignment much more easily.",
+      },
+    },
+    {
       ...baseProjects["gethubbers"],
+      label: "Side project",
       tagline: "Find coders where coders are.",
       description:
         "Recruiters and teams looking for local developers often have to go through middlemen. GetHubbers searches GitHub's API directly for developers in a city or a whole country and filters by programming language – across ten European countries, with a multilingual interface.",
     },
   ],
-  projectUi: { visit: "Visit site ↗", source: "Source on GitHub ↗" },
+  projectUi: {
+    visit: "Visit site ↗",
+    source: "Source on GitHub ↗",
+    problem: "Problem",
+    solution: "Solution",
+    result: "Result",
+  },
 
   skills: {
     daily: sv.skills.daily.map((s) =>

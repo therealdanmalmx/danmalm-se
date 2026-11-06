@@ -159,7 +159,7 @@ export const sv: Content = {
         "Interna verktyg och kunduppdrag med mätbar affärsnytta – bland annat ett onboardingverktyg som sparar över 10 timmar per nyanställd.",
       details: [
         "Vidareutvecklade en kundportal för en svensk myndighet – komponenter, funktioner och prestanda i Vue och TypeScript, samt API:er i .NET.",
-        "Byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
+        "Var med och byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
         "Kunduppdrag: en egenbyggd digital årsredovisning ersatte en extern tjänst – produktionskostnaden nästan halverades.",
         "Moderniserade ett kundanpassat CMS med återanvändbara komponenter.",
         "Bidrog till en konsultmatchningsportal med registrering, dashboards och avancerad sökning.",
@@ -218,8 +218,69 @@ export const sv: Content = {
   // The section is rendered only when non-empty.
   projects: [
     {
+      id: "consid-onboarding",
+      name: "Onboardingverktyg för Consid",
+      label: "Case · Consid",
+      tagline: "Över 10 sparade timmar per nyanställd – runt 1 000 timmar om året.",
+      caseStudy: {
+        problem:
+          "Onboardingen av runt 100 nyanställda om året sköttes med checklistor, mejl och kalkylark. HR fick lägga mycket tid på att hålla ihop allt och jaga status.",
+        solution:
+          "I ett team byggde vi ett webbverktyg där varje nyanställd har en egen onboardingplan, med inloggning, status per steg och filtrering. Jag var med och valde teknik och utvecklade verktyget i React och Next.js.",
+        result:
+          "HR ser direkt var varje person befinner sig. Verktyget ersatte den manuella processen och sparar över 10 timmar per nyanställd.",
+      },
+      stack: ["React", "Next.js", "TypeScript", "Tailwind"],
+    },
+    {
+      id: "consid-annual-report",
+      name: "Digital årsredovisning",
+      label: "Case · Consid",
+      tagline: "Halverad kostnad redan första året.",
+      caseStudy: {
+        problem:
+          "Kunden betalade varje år för en extern tjänst för att presentera sin årsredovisning digitalt, med begränsad egen kontroll över innehåll och upplägg.",
+        solution:
+          "En återanvändbar mall i Umbraco där en administratör lägger in text, bilder, film, diagram och länkar till dokument. Sidan för årsredovisningen skapas sedan automatiskt.",
+        result:
+          "Lösningen ersatte den externa tjänsten, sparade kunden 50 % redan första året och gav dem större kontroll över sin digitala rapportering.",
+      },
+      stack: ["Umbraco", "Razor Pages", "HTML", "CSS"],
+    },
+    {
+      id: "ellos-value-chain",
+      name: "Värdekedjan på produktsidan",
+      label: "Case · Ellos Group",
+      tagline: "Var och av vad är produkten gjord? Nu syns det direkt för kunden.",
+      caseStudy: {
+        problem:
+          "Kunder och nya regelkrav ställde högre krav på insyn i hur produkterna tillverkas – men informationen om material, certifieringar och leverantörer nådde inte fram till kunden.",
+        solution:
+          "Jag byggde en större komponent i Vue och Nuxt som visar produktens väg genom värdekedjan: materialens ursprung, certifieringar, betyg och leverantörer.",
+        result:
+          "Kunderna kan se var och av vad produkterna är gjorda, vilket stärker förtroendet och hjälper Ellos Group att möta kraven på transparens.",
+      },
+      stack: ["Vue", "Nuxt", "TypeScript"],
+    },
+    {
+      id: "consid-cv-portal",
+      name: "CV- och konsultportal",
+      label: "Case · Consid",
+      tagline: "Från CV:n i SharePoint till sökbar konsultmatchning.",
+      caseStudy: {
+        problem:
+          "Alla CV:n laddades upp i en SharePoint-portal utan riktig sökning eller filtrering. Att hitta rätt konsult till ett uppdrag var tidskrävande.",
+        solution:
+          "I ett Scrum-team byggde vi en förenklad variant av Cinode: konsulter lägger in erfarenheter, kompetenser och tillgänglighet och kan spara anpassade CV:n. Konsultchefer och säljare filtrerar på ort, region och land och söker detaljerat på kompetenser, erfarenheter, certifikat och språk.",
+        result:
+          "Konsultchefer och säljare får direkt överblick över vilka som är tillgängliga och hittar rätt profil till uppdragen betydligt enklare.",
+      },
+      stack: ["Vue", "TypeScript", "Tailwind", "REST"],
+    },
+    {
       id: "gethubbers",
       name: "GetHubbers",
+      label: "Eget projekt",
       url: "https://gethubbers.com",
       tagline: "Hitta utvecklare där utvecklare finns.",
       description:
@@ -228,7 +289,13 @@ export const sv: Content = {
       repo: "https://github.com/therealdanmalmx/getHubbers_new",
     },
   ],
-  projectUi: { visit: "Besök sidan ↗", source: "Källkod på GitHub ↗" },
+  projectUi: {
+    visit: "Besök sidan ↗",
+    source: "Källkod på GitHub ↗",
+    problem: "Problem",
+    solution: "Lösning",
+    result: "Resultat",
+  },
 
   skills: {
     daily: [

@@ -22,11 +22,15 @@ export type Experience = {
 export type Project = {
   id: string;
   name: string;
-  // Live site; the project name links here.
-  url: string;
+  // Live site; the project name links here. Cases for internal tools have none.
+  url?: string;
+  // Left-column label, e.g. "Case · Consid" or "Eget projekt".
+  label?: string;
   tagline?: string;
   // What problem the project solves.
-  description: string;
+  description?: string;
+  // Problem / solution / result, shown as three blocks.
+  caseStudy?: { problem: string; solution: string; result: string };
   stack: string[];
   // Only set for public repositories.
   repo?: string;
@@ -93,7 +97,7 @@ export type Content = {
     educationHeading: string;
   };
   projects: Project[];
-  projectUi: { visit: string; source: string };
+  projectUi: { visit: string; source: string; problem: string; solution: string; result: string };
   skills: {
     daily: Skill[];
     experienced: Skill[];
