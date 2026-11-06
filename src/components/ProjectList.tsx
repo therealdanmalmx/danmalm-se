@@ -7,16 +7,11 @@ function hostname(url: string) {
   return new URL(url).hostname.replace(/^www\./, "");
 }
 
-// Problem / solution / result, with the result picked out in the accent colour.
-function CaseStudy({ t, study }: { t: Content; study: NonNullable<Project["caseStudy"]> }) {
-  const ui = t.projectUi;
-  const blocks = [
-    { label: ui.problem, text: study.problem, accent: false },
-    { label: ui.solution, text: study.solution, accent: false },
-    { label: ui.result, text: study.result, accent: true },
-  ];
+type Block = { label: string; text: string; accent?: boolean };
+
+function Blocks({ blocks, className }: { blocks: Block[]; className: string }) {
   return (
-    <dl className="mt-5 max-w-3xl space-y-4">
+    <dl className={`max-w-3xl space-y-4 ${className}`}>
       {blocks.map((b) => (
         <div key={b.label}>
           <dt className="font-mono text-xs uppercase tracking-widest text-accent">{b.label}</dt>
@@ -24,6 +19,30 @@ function CaseStudy({ t, study }: { t: Content; study: NonNullable<Project["caseS
         </div>
       ))}
     </dl>
+  );
+}
+
+// Problem / solution / result, with the result picked out. Desktop shows all three;
+// phones show the result and keep problem and solution behind "Read more".
+function CaseStudy({ t, study }: { t: Content; study: NonNullable<Project["caseStudy"]> }) {
+  const ui = t.projectUi;
+  const problem = { label: ui.problem, text: study.problem };
+  const solution = { label: ui.solution, text: study.solution };
+  const result = { label: ui.result, text: study.result, accent: true };
+  return (
+    <>
+      <Blocks blocks={[problem, solution, result]} className="mt-5 hidden md:block" />
+      <div className="md:hidden">
+        <Blocks blocks={[result]} className="mt-5" />
+        <details className="group mt-3">
+          <summary className="cursor-pointer text-sm text-accent">
+            <span className="group-open:hidden">{t.experienceUi.readMore}</span>
+            <span className="hidden group-open:inline">{t.experienceUi.showLess}</span>
+          </summary>
+          <Blocks blocks={[problem, solution]} className="mt-4" />
+        </details>
+      </div>
+    </>
   );
 }
 

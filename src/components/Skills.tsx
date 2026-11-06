@@ -1,10 +1,30 @@
 import { usedAt, type Content, type Skill } from "@/content/content";
 
-function SkillList({ t, heading, items }: { t: Content; heading: string; items: Skill[] }) {
+// `compact`: on phones, show just the names as tags instead of one row per skill.
+function SkillList({
+  t,
+  heading,
+  items,
+  compact = false,
+}: {
+  t: Content;
+  heading: string;
+  items: Skill[];
+  compact?: boolean;
+}) {
   return (
     <div>
       <h3 className="font-display text-xl font-semibold">{heading}</h3>
-      <dl className="mt-6 space-y-3">
+      {compact && (
+        <ul className="mt-6 flex flex-wrap gap-2 md:hidden">
+          {items.map((skill) => (
+            <li key={skill.name} className="rounded-sm border border-line px-3 py-1 text-sm">
+              {skill.name}
+            </li>
+          ))}
+        </ul>
+      )}
+      <dl className={`mt-6 space-y-3 ${compact ? "hidden md:block" : ""}`}>
         {items.map((skill) => {
           const places = usedAt(t, skill);
           return (
@@ -27,7 +47,7 @@ export function Skills({ t }: { t: Content }) {
   return (
     <div className="space-y-16">
       <SkillList t={t} heading={headings.daily} items={t.skills.daily} />
-      <SkillList t={t} heading={headings.experienced} items={t.skills.experienced} />
+      <SkillList t={t} heading={headings.experienced} items={t.skills.experienced} compact />
       <div>
         <h3 className="font-display text-xl font-semibold">{headings.languages}</h3>
         <p className="mt-6 leading-relaxed text-muted">
