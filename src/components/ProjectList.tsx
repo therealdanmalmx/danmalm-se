@@ -31,7 +31,7 @@ function CaseStudy({ t, study }: { t: Content; study: NonNullable<Project["caseS
 export function ProjectItem({ t, project }: { t: Content; project: Project }) {
   const newTab = <span className="sr-only"> {t.newTab}</span>;
   return (
-    <li id={project.id} className="grid scroll-mt-24 gap-3 py-8 first:pt-0 lg:grid-cols-[11rem_1fr] lg:gap-8">
+    <li id={project.id} className="grid scroll-mt-32 gap-3 md:scroll-mt-24 py-8 first:pt-0 lg:grid-cols-[11rem_1fr] lg:gap-8">
       <div className="font-mono text-xs leading-relaxed text-muted">
         {project.label && <p className="text-ink">{project.label}</p>}
         {project.url && <p className={project.label ? "" : "text-ink"}>{hostname(project.url)}</p>}

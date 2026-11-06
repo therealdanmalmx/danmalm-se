@@ -38,6 +38,18 @@ export function Header({ t }: { t: Content }) {
           </a>
         </div>
       </div>
+      {/* Phones: the same links in a second row that scrolls sideways if it doesn't fit. */}
+      <nav aria-label={t.nav.label} className="border-t border-line md:hidden">
+        <ul className="flex justify-between gap-3 overflow-x-auto px-4 py-2.5 text-sm whitespace-nowrap text-muted [scrollbar-width:none] sm:justify-start sm:gap-6 sm:px-6">
+          {nav.map((item) => (
+            <li key={item.href}>
+              <a href={item.href} className="transition-colors hover:text-ink">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

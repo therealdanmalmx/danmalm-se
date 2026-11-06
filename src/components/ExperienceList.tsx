@@ -60,7 +60,7 @@ function ItemList({ items, t, nested }: { items: Experience[]; t: Content; neste
         <li
           key={item.id}
           id={item.id}
-          className="grid scroll-mt-24 gap-3 py-8 first:pt-0 lg:grid-cols-[11rem_1fr] lg:gap-8"
+          className="grid scroll-mt-32 gap-3 md:scroll-mt-24 py-8 first:pt-0 lg:grid-cols-[11rem_1fr] lg:gap-8"
         >
           <Meta item={item} />
           <div>
