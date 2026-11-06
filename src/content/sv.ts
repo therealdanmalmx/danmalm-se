@@ -46,7 +46,7 @@ export const sv: Content = {
   },
 
   about: [
-    "Jag är civilekonom som blev utvecklare – en vecka innan pandemin bröt ut 2020. Det enda jag ångrar är att jag inte bytte bana tidigare.",
+    "Jag är civilekonom och har jobbat många år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. En vecka innan pandemin bröt ut 2020 bytte jag bana till utveckling. Det enda jag ångrar är att jag inte gjorde det tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
     "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
   ],
@@ -111,8 +111,8 @@ export const sv: Content = {
       period: "sep 2025 – jun 2027",
       kind: "Utbildning",
       education: true,
-      summary: "Tvåårig utbildning i C#, .NET, Entity Framework och databaser.",
-      stack: ["C#", ".NET", "Entity Framework", "SQL", "Claude Code", "GitHub Copilot"],
+      summary: "Tvåårig utbildning med fokus på C#, .NET, Entity Framework och databaser – samt React, React Native och Hono.",
+      stack: ["C#", ".NET", "Entity Framework", "SQL", "React", "React Native", "Hono", "Claude Code", "GitHub Copilot"],
     },
     {
       id: "one-sky",
@@ -133,7 +133,7 @@ export const sv: Content = {
       period: "dec 2024 – apr 2025",
       kind: "Volontär",
       summary:
-        "Brittisk plattform som kopplar ihop volontärer med startups, så att de får arbetslivserfarenhet i riktiga projekt. Arbetade på distans med utvecklingsteamet och deltog i ombyggnaden av plattformen från Vue 2 till Vue 3.",
+        "Brittisk plattform som kopplar ihop volontärer med startups, så att de får arbetslivserfarenhet i riktiga projekt. Var med och byggde om plattformen från grunden och migrerade den från Vue 2 till Vue 3, med återanvändbara komponenter som dashboards, diagram och menyer. Kom regelbundet med förslag till ledningen i tekniska frågor.",
       stack: ["Vue 3", "TypeScript", "Pinia", "Tailwind", "REST"],
     },
     {
@@ -154,6 +154,7 @@ export const sv: Content = {
       period: "jan 2023 – jul 2024",
       summary: "Interna verktyg och kunduppdrag med mätbar affärsnytta.",
       details: [
+        "Vidareutvecklade en kundportal för en svensk myndighet – komponenter, funktioner och prestanda i Vue och TypeScript, samt API:er i .NET.",
         "Byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
         "Kunduppdrag: en egenbyggd digital årsredovisning ersatte en extern tjänst – produktionskostnaden nästan halverades.",
         "Moderniserade ett kundanpassat CMS med återanvändbara komponenter.",

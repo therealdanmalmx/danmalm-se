@@ -51,7 +51,7 @@ export const en: Content = {
   },
 
   about: [
-    "Before I wrote code, I worked in business development, marketing and strategy. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
+    "Before I wrote code, I spent many years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
     "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
   ],
@@ -103,7 +103,7 @@ export const en: Content = {
       company: "Higher Vocational Education (YH)",
       period: "Sep 2025 – Jun 2027",
       kind: "Education",
-      summary: "Two-year programme in C#, .NET, Entity Framework and databases.",
+      summary: "Two-year programme focused on C#, .NET, Entity Framework and databases – plus React, React Native and Hono.",
     },
     {
       ...base["one-sky"],
@@ -121,7 +121,7 @@ export const en: Content = {
       period: "Dec 2024 – Apr 2025",
       kind: "Volunteer",
       summary:
-        "UK-based platform that connects volunteers with startups so they can gain work experience on real projects. Worked remotely with the development team and helped migrate the platform from Vue 2 to Vue 3.",
+        "UK-based platform that connects volunteers with startups so they can gain work experience on real projects. Helped rebuild the platform from scratch and migrate it from Vue 2 to Vue 3, with reusable components such as dashboards, charts and menus. Regularly advised leadership on technical issues.",
     },
     {
       ...base["nexer"],
@@ -136,6 +136,7 @@ export const en: Content = {
       period: "Jan 2023 – Jul 2024",
       summary: "Internal tools and client projects with measurable business value.",
       details: [
+        "Developed a customer portal for a Swedish government agency – components, features and performance in Vue and TypeScript, plus APIs in .NET.",
         "Built an internal onboarding tool for Consid with sign-in and status tracking – saving over 10 hours per new hire.",
         "Client project: an in-house digital annual report replaced an external service – production costs nearly halved.",
         "Modernised a custom CMS with reusable components.",
