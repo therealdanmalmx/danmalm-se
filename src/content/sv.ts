@@ -47,7 +47,7 @@ export const sv: Content = {
   },
 
   about: [
-    "Jag är civilekonom och har jobbat många år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. En vecka innan pandemin bröt ut 2020 bytte jag bana till utveckling. Det enda jag ångrar är att jag inte gjorde det tidigare.",
+    "Jag är civilekonom och har jobbat nästan 20 år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. En vecka innan pandemin bröt ut 2020 bytte jag bana till utveckling. Det enda jag ångrar är att jag inte gjorde det tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
     "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
     "Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut.",

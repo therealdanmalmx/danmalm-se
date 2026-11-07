@@ -52,7 +52,7 @@ export const en: Content = {
   },
 
   about: [
-    "Before I wrote code, I spent many years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
+    "Before I wrote code, I spent almost 20 years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
     "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
     "I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships.",
