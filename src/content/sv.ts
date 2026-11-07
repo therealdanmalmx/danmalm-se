@@ -297,7 +297,7 @@ export const sv: Content = {
         "Daniel has an eye for detail. He can reason about the different outcomes, weighing pros and cons, and is asking relevant questions for the task at hand as well as how it connects to the bigger picture. He takes initiatives, wants to achieve and has the curiosity and the mindset needed to stand out as a developer.",
       name: "Sven Odén",
       role: "Systemutvecklare / Team Lead, Avarda",
-      relation: "Senior kollega under min praktik",
+      relation: "Min mentor under praktiken",
     },
     {
       id: "manoj-ranaweera",
