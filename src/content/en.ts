@@ -250,8 +250,8 @@ export const en: Content = {
   testimonials: sv.testimonials.map((r) => ({
     ...r,
     ...{
-      "sven-oden": { role: "Software developer / Team lead, Avarda", relation: "My mentor during the internship" },
-      "manoj-ranaweera": { role: "Founder, SkilledUp Life", relation: "My direct manager" },
+      "sven-oden": { role: "Team lead at Avarda and my mentor during the internship" },
+      "manoj-ranaweera": { role: "Founder of SkilledUp Life and my direct manager" },
     }[r.id],
   })),
   testimonialsMore: "More recommendations on LinkedIn ↗",

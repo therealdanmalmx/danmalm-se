@@ -14,7 +14,6 @@ export function Testimonials({ t }: { t: Content }) {
             <figcaption className="mt-5 text-sm leading-relaxed">
               <span className="font-display font-semibold">{r.name}</span>
               <span className="block text-muted">{r.role}</span>
-              <span className="block font-mono text-xs text-accent">{r.relation}</span>
             </figcaption>
           </figure>
         ))}

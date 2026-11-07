@@ -41,9 +41,8 @@ export type Testimonial = {
   id: string;
   quote: string;
   name: string;
+  // Their role and how they worked with Daniel, e.g. "Founder of X and my direct manager".
   role: string;
-  // How the person worked with Daniel, e.g. "Direct manager".
-  relation: string;
 };
 
 export type Skill = {

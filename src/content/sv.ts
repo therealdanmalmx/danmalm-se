@@ -296,16 +296,14 @@ export const sv: Content = {
       quote:
         "Daniel has an eye for detail. He can reason about the different outcomes, weighing pros and cons, and is asking relevant questions for the task at hand as well as how it connects to the bigger picture. He takes initiatives, wants to achieve and has the curiosity and the mindset needed to stand out as a developer.",
       name: "Sven Odén",
-      role: "Systemutvecklare / Team Lead, Avarda",
-      relation: "Min mentor under praktiken",
+      role: "Team Lead på Avarda och min mentor under praktiken",
     },
     {
       id: "manoj-ranaweera",
       quote:
         "He demonstrated high level of professionalism and was easy to work with. He got on with team mates from China, UK, Sri Lanka, Bangladesh, USA, Canada, Ghana and Nigeria well in a fully remote setting.",
       name: "Manoj Ranaweera",
-      role: "Grundare, SkilledUp Life",
-      relation: "Min närmaste chef",
+      role: "Grundare av SkilledUp Life och min närmaste chef",
     },
   ],
   testimonialsMore: "Fler rekommendationer på LinkedIn ↗",
