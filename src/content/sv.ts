@@ -63,6 +63,13 @@ export const sv: Content = {
     projects: {
       heading: "Projekt & samarbeten",
       text: "För mindre företag som behöver något byggt, fixat eller förbättrat – från luddig idé till fungerande MVP, eller att få det ni redan har att fungera bättre.",
+      stepsHeading: "Så funkar det",
+      steps: [
+        { title: "Kort samtal, 15 min.", text: "Du berättar om problemet – jag frågar varför och för vem." },
+        { title: "Förslag och offert.", text: "Vad som ska byggas, hur lång tid det tar och vad det kostar." },
+        { title: "Leverans i små steg.", text: "Du ser resultat tidigt och kan styra längs vägen." },
+      ],
+      invoicing: "Jag fakturerar via ett egenanställningsföretag – du får en vanlig faktura.",
       cta: "Boka projektmöte",
     },
   },

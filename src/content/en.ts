@@ -68,6 +68,13 @@ export const en: Content = {
     projects: {
       heading: "Projects & collaborations",
       text: "For smaller companies that need something built, fixed or improved – from fuzzy idea to working MVP, or making what you already have work better.",
+      stepsHeading: "How it works",
+      steps: [
+        { title: "Short call, 15 min.", text: "You tell me about the problem – I ask why and for whom." },
+        { title: "Proposal and quote.", text: "What gets built, how long it takes and what it costs." },
+        { title: "Delivered in small steps.", text: "You see results early and can steer along the way." },
+      ],
+      invoicing: "I invoice through an umbrella company – you get a regular invoice.",
       cta: "Book a project meeting",
     },
   },

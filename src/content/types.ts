@@ -96,7 +96,15 @@ export type Content = {
   tracks: {
     heading: string;
     employment: { heading: string; text: string; cta: string };
-    projects: { heading: string; text: string; cta: string };
+    projects: {
+      heading: string;
+      text: string;
+      // "How it works": short steps from first call to delivery.
+      stepsHeading: string;
+      steps: { title: string; text: string }[];
+      invoicing: string;
+      cta: string;
+    };
   };
   experience: Experience[];
   experienceUi: {
