@@ -8,6 +8,7 @@ import { Hero } from "./Hero";
 import { ProjectList } from "./ProjectList";
 import { Section } from "./Section";
 import { Skills } from "./Skills";
+import { Testimonials } from "./Testimonials";
 import { Tracks } from "./Tracks";
 
 export function HomePage({ t }: { t: Content }) {
@@ -44,6 +45,11 @@ export function HomePage({ t }: { t: Content }) {
         {t.projects.length > 0 && (
           <Section id="projekt" number={next()} label={s.projects}>
             <ProjectList t={t} />
+          </Section>
+        )}
+        {t.testimonials.length > 0 && (
+          <Section id="rekommendationer" number={next()} label={s.testimonials}>
+            <Testimonials t={t} />
           </Section>
         )}
         <Section id="fardigheter" number={next()} label={s.skills}>

@@ -3,7 +3,7 @@ import type { Content, Locale, Skill } from "./types";
 import { en } from "./en";
 import { sv } from "./sv";
 
-export type { Content, Experience, Locale, Project, Skill } from "./types";
+export type { Content, Experience, Locale, Project, Skill, Testimonial } from "./types";
 
 export const content: Record<Locale, Content> = { sv, en };
 

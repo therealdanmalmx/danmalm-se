@@ -34,6 +34,7 @@ export const en: Content = {
     collaboration: "Work with me",
     experience: "Experience",
     projects: "Projects",
+    testimonials: "Recommendations",
     skills: "Skills",
     contact: "Contact",
   },
@@ -246,6 +247,14 @@ export const en: Content = {
         "Recruiters and teams looking for local developers often have to go through middlemen. GetHubbers searches GitHub's API directly for developers in a city or a whole country and filters by programming language – across ten European countries, with a multilingual interface.",
     },
   ],
+  testimonials: sv.testimonials.map((r) => ({
+    ...r,
+    ...{
+      "sven-oden": { role: "Software developer / Team lead, Avarda", relation: "Senior colleague during my internship" },
+      "manoj-ranaweera": { role: "Founder, SkilledUp Life", relation: "My direct manager" },
+    }[r.id],
+  })),
+  testimonialsMore: "More recommendations on LinkedIn ↗",
   projectUi: {
     visit: "Visit site ↗",
     source: "Source on GitHub ↗",

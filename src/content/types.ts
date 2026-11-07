@@ -36,6 +36,16 @@ export type Project = {
   repo?: string;
 };
 
+// A LinkedIn recommendation, quoted in its original language.
+export type Testimonial = {
+  id: string;
+  quote: string;
+  name: string;
+  role: string;
+  // How the person worked with Daniel, e.g. "Direct manager".
+  relation: string;
+};
+
 export type Skill = {
   name: string;
   // Stack labels in `experience` that count as this skill; defaults to [name].
@@ -71,6 +81,7 @@ export type Content = {
     collaboration: string;
     experience: string;
     projects: string;
+    testimonials: string;
     skills: string;
     contact: string;
   };
@@ -97,6 +108,8 @@ export type Content = {
     educationHeading: string;
   };
   projects: Project[];
+  testimonials: Testimonial[];
+  testimonialsMore: string;
   projectUi: { visit: string; source: string; problem: string; solution: string; result: string };
   skills: {
     daily: Skill[];
