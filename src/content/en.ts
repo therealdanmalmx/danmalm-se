@@ -12,7 +12,7 @@ export const en: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Full-stack developer in Borås & Gothenburg",
     description:
-      "Full-stack developer · React, Vue, TypeScript & .NET. Taking on projects now – open to permanent roles from May 2027. Borås / Gothenburg area / Remote.",
+      "Full-stack developer in Borås and former business developer. I build web solutions in React, Vue and .NET focused on real value – taking on projects now.",
   },
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
   location: "Borås / Gothenburg area / Remote",
@@ -139,7 +139,7 @@ export const en: Content = {
         "Internal tools and client projects with measurable business value – including an onboarding tool that saves over 10 hours per new hire.",
       details: [
         "Developed a customer portal for a Swedish government agency – components, features and performance in Vue and TypeScript, plus APIs in .NET.",
-        "Helped build an internal onboarding tool for Consid with sign-in and status tracking – saving over 10 hours per new hire.",
+        "Helped build an internal onboarding tool for Consid with sign-in, status per step and filtering.",
         "Client project: an in-house digital annual report replaced an external service – production costs nearly halved.",
         "Modernised a custom CMS with reusable components.",
         "Contributed to a consultant-matching portal with sign-up, dashboards and advanced search.",
@@ -196,7 +196,7 @@ export const en: Content = {
         solution:
           "As part of a team, we built a web tool where every new hire has their own onboarding plan, with sign-in, status per step and filtering. I helped choose the tech and developed the tool in React and Next.js.",
         result:
-          "HR can see at a glance where each person stands. The tool replaced the manual process and saves over 10 hours per new hire.",
+          "HR can see at a glance where each person stands. The tool replaced the manual process entirely.",
       },
     },
     {

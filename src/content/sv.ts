@@ -6,7 +6,7 @@ export const sv: Content = {
   meta: {
     title: "Daniel Malmgren de Oliveira – Fullstackutvecklare i Borås & Göteborg",
     description:
-      "Fullstackutvecklare · React, Vue, TypeScript & .NET. Tar emot uppdrag redan nu – öppen för tillsvidareanställning från maj 2027. Borås / Göteborg med omnejd / Remote.",
+      "Fullstackutvecklare i Borås med bakgrund som civilekonom. Jag bygger webblösningar i React, Vue och .NET med affärsnyttan i fokus – tar emot uppdrag nu.",
   },
   role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
   location: "Borås / Göteborg med omnejd / Remote",
@@ -159,7 +159,7 @@ export const sv: Content = {
         "Interna verktyg och kunduppdrag med mätbar affärsnytta – bland annat ett onboardingverktyg som sparar över 10 timmar per nyanställd.",
       details: [
         "Vidareutvecklade en kundportal för en svensk myndighet – komponenter, funktioner och prestanda i Vue och TypeScript, samt API:er i .NET.",
-        "Var med och byggde ett internt onboardingverktyg för Consid med inloggning och statushantering – sparar över 10 timmar per nyanställd.",
+        "Var med och byggde ett internt onboardingverktyg för Consid med inloggning, status per steg och filtrering.",
         "Kunduppdrag: en egenbyggd digital årsredovisning ersatte en extern tjänst – produktionskostnaden nästan halverades.",
         "Moderniserade ett kundanpassat CMS med återanvändbara komponenter.",
         "Bidrog till en konsultmatchningsportal med registrering, dashboards och avancerad sökning.",
@@ -228,7 +228,7 @@ export const sv: Content = {
         solution:
           "I ett team byggde vi ett webbverktyg där varje nyanställd har en egen onboardingplan, med inloggning, status per steg och filtrering. Jag var med och valde teknik och utvecklade verktyget i React och Next.js.",
         result:
-          "HR ser direkt var varje person befinner sig. Verktyget ersatte den manuella processen och sparar över 10 timmar per nyanställd.",
+          "HR ser direkt var varje person befinner sig. Verktyget ersatte den manuella processen helt.",
       },
       stack: ["React", "Next.js", "TypeScript", "Tailwind"],
     },

@@ -43,6 +43,14 @@ export function Hero({ t }: { t: Content }) {
             {hero.projectLink}
           </a>
           <SocialLinks t={t} className="text-muted" />
+          <a
+            href={siteConfig.cv[t.locale]}
+            download
+            aria-label={t.experienceUi.downloadCv.replace(" ↓", "")}
+            className="font-mono text-sm text-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
+          >
+            CV ↓
+          </a>
         </div>
       </div>
     </div>
