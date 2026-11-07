@@ -112,7 +112,6 @@ export type Content = {
     booking: string;
     bookInterview: string;
     bookProject: string;
-    altEmail: string;
   };
   footerGreeting: string;
 };

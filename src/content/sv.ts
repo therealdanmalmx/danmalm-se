@@ -4,7 +4,7 @@ export const sv: Content = {
   locale: "sv",
   path: "/",
   meta: {
-    title: "Daniel Malmgren de Oliveira – Fullstackutvecklare",
+    title: "Daniel Malmgren de Oliveira – Fullstackutvecklare i Borås & Göteborg",
     description:
       "Fullstackutvecklare · React, Vue, TypeScript & .NET. Tar emot uppdrag redan nu – öppen för tillsvidareanställning från maj 2027. Borås / Göteborg med omnejd / Remote.",
   },
@@ -348,7 +348,6 @@ export const sv: Content = {
     booking: "Boka möte",
     bookInterview: "Samtal om anställning →",
     bookProject: "Projektmöte →",
-    altEmail: "Alternativ e-post:",
   },
   footerGreeting: "hälsningar från Daniel",
 };

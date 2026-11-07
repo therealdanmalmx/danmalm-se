@@ -34,12 +34,6 @@ export function Contact({ t }: { t: Content }) {
           </span>
         </div>
       </div>
-      <p className="mt-4 text-sm text-muted">
-        {c.altEmail}{" "}
-        <a href={`mailto:${siteConfig.emailAlt}`} className="text-ink underline-offset-4 hover:text-accent hover:underline">
-          {siteConfig.emailAlt}
-        </a>
-      </p>
     </>
   );
 }

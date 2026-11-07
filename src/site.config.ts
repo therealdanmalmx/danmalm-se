@@ -6,7 +6,6 @@ export const siteConfig = {
   url: "https://danmalm.se",
 
   email: "me@danmalm.se",
-  emailAlt: "danmalmx@gmail.com",
   phone: { display: "+46 72 200 15 20", href: "+46722001520" },
 
   booking: {

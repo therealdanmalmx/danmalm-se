@@ -12,14 +12,17 @@ export function Hero({ t }: { t: Content }) {
     <div id="top" className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-8 pb-16 sm:px-6 md:grid-cols-[1fr_18rem] md:pt-24 md:pb-28 lg:grid-cols-[1fr_22rem] lg:px-8">
       <Image {...photo} className="hidden w-full rounded-sm grayscale-[15%] md:order-2 md:block" />
       <div className="md:order-1">
-        <div className="flex items-center gap-4">
-          <Image {...photo} className="w-16 shrink-0 rounded-sm grayscale-[15%] md:hidden" />
-          <p className="font-mono text-sm tracking-wide text-accent uppercase">{t.role}</p>
-        </div>
-        <h1 className="mt-5 font-display text-[2rem] leading-[1.1] font-bold tracking-tight sm:text-5xl md:mt-6">
-          {hero.headline.before}
-          <em className="text-accent">{hero.headline.emphasis}</em>
-          {hero.headline.after}
+        {/* The role line is part of the h1 so the heading carries the job title and stack. */}
+        <h1>
+          <span className="flex items-center gap-4">
+            <Image {...photo} alt="" className="w-16 shrink-0 rounded-sm grayscale-[15%] md:hidden" />
+            <span className="font-mono text-sm tracking-wide text-accent uppercase">{t.role}</span>
+          </span>
+          <span className="mt-5 block font-display text-[2rem] leading-[1.1] font-bold tracking-tight sm:text-5xl md:mt-6">
+            {hero.headline.before}
+            <em className="text-accent">{hero.headline.emphasis}</em>
+            {hero.headline.after}
+          </span>
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed sm:text-xl md:mt-8">
           {hero.greeting} <strong className="font-semibold">{siteConfig.name}</strong> – {hero.intro}
