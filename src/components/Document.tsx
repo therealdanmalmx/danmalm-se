@@ -75,6 +75,7 @@ export function Document({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd(t)).replace(/</g, "\\u003c") }}
         />
+        <link rel="preconnect" href="https://app.analyzati.com" />
         {/* Analyzati page analytics */}
         <script
           data-host="https://app.analyzati.com"

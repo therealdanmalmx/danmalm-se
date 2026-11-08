@@ -9,13 +9,10 @@ const options: { locale: Locale; label: string; path: string }[] = [
   { locale: "en", label: "EN", path: "/en/" },
 ];
 
-// Remembers an explicit choice so the browser-language redirect on "/" stops applying.
+// Remembers an explicit choice in a cookie. Caddy reads it: with a `lang` cookie set,
+// "/" is no longer redirected to "/en/" based on the browser language.
 function remember(locale: Locale) {
-  try {
-    localStorage.setItem("lang", locale);
-  } catch {
-    // Storage blocked; the toggle still navigates.
-  }
+  document.cookie = `lang=${locale}; Path=/; Max-Age=31536000; SameSite=Lax; Secure`;
 }
 
 export function LanguageToggle({ current, label }: { current: Locale; label: string }) {

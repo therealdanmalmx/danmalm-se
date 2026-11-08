@@ -1,0 +1,20 @@
+# Language redirect for danmalm.se. Paste inside the danmalm.se site block on the
+# VPS (before file_server) and reload Caddy.
+#
+# A first visit to "/" from a browser that doesn't ask for Swedish goes straight
+# to /en/, before any page is sent. Skipped when:
+#   - the visitor has picked a language with the SE/EN toggle (lang cookie),
+#   - the client sends no Accept-Language at all (most crawlers and tools),
+#   - the user agent looks like a crawler or link previewer.
+@english_visitor {
+	path /
+	header Accept-Language *
+	not header_regexp Accept-Language (?i)(^|[\s,])sv([-;,]|$)
+	not header Cookie *lang=*
+	not header_regexp User-Agent (?i)bot|crawl|spider|slurp|preview|facebookexternalhit
+}
+redir @english_visitor /en/ 302
+
+# "/" now depends on these request headers, so shared caches must keep the variants apart.
+@root path /
+header @root Vary "Accept-Language, Cookie"

@@ -7,15 +7,30 @@ import { SocialLinks } from "./SocialLinks";
 // and the booking button fit on the first screen. From md up: large photo on the right.
 export function Hero({ t }: { t: Content }) {
   const { hero } = t;
-  const photo = { src: "/images/daniel.jpg", alt: hero.photoAlt, width: 576, height: 576, priority: true };
+  // Large photo: lazy, so phones (where it's display:none) never download it.
+  // Small photo: a 128 px file for the 64 px thumbnail, loaded with priority.
   return (
     <div id="top" className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-8 pb-16 sm:px-6 md:grid-cols-[1fr_18rem] md:pt-24 md:pb-28 lg:grid-cols-[1fr_22rem] lg:px-8">
-      <Image {...photo} className="hidden w-full rounded-sm grayscale-[15%] md:order-2 md:block" />
+      <Image
+        src="/images/daniel.webp"
+        alt={hero.photoAlt}
+        width={576}
+        height={576}
+        loading="lazy"
+        className="hidden w-full rounded-sm grayscale-[15%] md:order-2 md:block"
+      />
       <div className="md:order-1">
         {/* The role line is part of the h1 so the heading carries the job title and stack. */}
         <h1>
           <span className="flex items-center gap-4">
-            <Image {...photo} alt="" className="w-16 shrink-0 rounded-sm grayscale-[15%] md:hidden" />
+            <Image
+              src="/images/daniel-128.webp"
+              alt=""
+              width={128}
+              height={128}
+              priority
+              className="w-16 shrink-0 rounded-sm grayscale-[15%] md:hidden"
+            />
             <span className="font-mono text-sm tracking-wide text-accent uppercase">{t.role}</span>
           </span>
           <span className="mt-5 block font-display text-[2rem] leading-[1.1] font-bold tracking-tight sm:text-5xl md:mt-6">
