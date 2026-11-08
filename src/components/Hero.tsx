@@ -10,7 +10,7 @@ export function Hero({ t }: { t: Content }) {
   // Large photo: lazy, so phones (where it's display:none) never download it.
   // Small photo: a 128 px file for the 64 px thumbnail, loaded with priority.
   return (
-    <div id="top" className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-8 pb-16 sm:px-6 md:grid-cols-[1fr_18rem] md:pt-24 md:pb-28 lg:grid-cols-[1fr_22rem] lg:px-8">
+    <div id="top" className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-8 pb-16 sm:px-6 md:grid-cols-[1fr_18rem] md:pt-14 md:pb-24 lg:grid-cols-[1fr_22rem] lg:px-8">
       <Image
         src="/images/daniel.webp"
         alt={hero.photoAlt}
