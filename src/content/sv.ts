@@ -326,6 +326,7 @@ export const sv: Content = {
     daily: [
       { name: "Vue 2 & 3", match: ["Vue", "Vue 3"] },
       { name: "React", match: ["React", "React Native"] },
+      { name: "Angular" },
       { name: "TypeScript / JavaScript", match: ["TypeScript", "JavaScript"] },
       { name: "C# / .NET", match: ["C#", ".NET"] },
       { name: "Tailwind" },
@@ -337,7 +338,6 @@ export const sv: Content = {
     ],
     experienced: [
       { name: "ASP.NET", match: ["ASP.NET"] },
-      { name: "Angular" },
       { name: "Entity Framework" },
       { name: "SQL Server" },
       { name: "PostgreSQL" },
