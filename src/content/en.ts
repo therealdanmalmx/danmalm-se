@@ -23,6 +23,7 @@ export const en: Content = {
   nav: {
     label: "Main menu",
     language: "Language",
+    book: "Book a call",
     about: "About",
     experience: "Experience",
     projects: "Projects",

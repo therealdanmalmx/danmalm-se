@@ -14,7 +14,7 @@ export function Header({ t }: { t: Content }) {
   return (
     <header className="sticky top-0 z-10 border-b border-line bg-obsidian/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="font-display font-semibold tracking-tight">
+        <a href="#top" className="whitespace-nowrap font-display font-semibold tracking-tight">
           Daniel Malmgren<span className="text-accent">.</span>
         </a>
         <nav aria-label={t.nav.label} className="hidden md:block">
@@ -32,9 +32,11 @@ export function Header({ t }: { t: Content }) {
           <LanguageToggle current={t.locale} label={t.nav.language} />
           <a
             href={siteConfig.booking.project}
-            className="rounded-sm bg-accent px-4 py-2 text-sm font-semibold text-obsidian transition-opacity hover:opacity-90"
+            className="whitespace-nowrap rounded-sm bg-accent px-4 py-2 text-sm font-semibold text-obsidian transition-opacity hover:opacity-90"
           >
-            {t.tracks.projects.cta}
+            {/* The full label only fits once the nav links have room (lg). */}
+            <span className="lg:hidden">{t.nav.book}</span>
+            <span className="hidden lg:inline">{t.tracks.projects.cta}</span>
           </a>
         </div>
       </div>

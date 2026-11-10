@@ -69,6 +69,8 @@ export type Content = {
   nav: {
     label: string;
     language: string;
+    // Short header button label below the lg breakpoint.
+    book: string;
     about: string;
     experience: string;
     projects: string;

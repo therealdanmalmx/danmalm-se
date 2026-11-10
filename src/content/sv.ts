@@ -18,6 +18,7 @@ export const sv: Content = {
   nav: {
     label: "Huvudmeny",
     language: "Språk",
+    book: "Boka samtal",
     about: "Om mig",
     experience: "Erfarenhet",
     projects: "Projekt",
