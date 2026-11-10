@@ -1,11 +1,10 @@
 import { siteConfig } from "@/site.config";
 import type { Content } from "@/content/content";
-import { DiscordIcon, GitHubIcon, LinkedInIcon } from "./icons";
+import { GitHubIcon, LinkedInIcon } from "./icons";
 
 const links = [
   { name: "LinkedIn", href: siteConfig.linkedin, Icon: LinkedInIcon },
   { name: "GitHub", href: siteConfig.github, Icon: GitHubIcon },
-  { name: "Discord", href: siteConfig.discord, Icon: DiscordIcon },
 ];
 
 export function SocialLinks({ t, className = "" }: { t: Content; className?: string }) {

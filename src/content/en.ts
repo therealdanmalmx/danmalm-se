@@ -17,7 +17,7 @@ export const en: Content = {
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
   location: "Borås / Gothenburg area / Remote",
   status: "Currently: back-end developer intern at Centiro.",
-  availability: "Taking on smaller projects alongside – and looking for a permanent role from May 2027.",
+  availability: "On evenings and weekends I take on a few smaller projects, and from May 2027 I'm open to a permanent role.",
   newTab: "(opens in a new tab)",
 
   nav: {
@@ -55,7 +55,7 @@ export const en: Content = {
     "Before I wrote code, I spent almost 20 years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. In 2018 I retrained – first a bootcamp, then a C# and .NET programme with an internship – and a week before the pandemic hit in 2020 I started my first developer job. My only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
     "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
-    "I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships.",
+    "I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I stand behind every line I ship.",
   ],
 
   tracks: {
@@ -83,7 +83,7 @@ export const en: Content = {
     {
       ...base["centiro"],
       title: "Back-end developer",
-      period: "Nov 2026 – May 2027",
+      period: "Dec 2026 – May 2027",
       kind: "Internship",
       summary: "Ongoing internship focused on C# and .NET.",
     },
@@ -91,7 +91,7 @@ export const en: Content = {
       ...base["centiro-deltid"],
       title: "Front-end developer (part-time)",
       period: "Sep – Dec 2026",
-      summary: "Upgraded the Angular version and rolled out the company's design system in the application.",
+      summary: "Upgraded the Angular version and rolled out the company's design system in the application. Led to an internship at the same company.",
     },
     {
       ...base["avarda"],

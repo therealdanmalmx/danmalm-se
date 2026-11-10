@@ -20,7 +20,5 @@ export const siteConfig = {
 
   linkedin: "https://www.linkedin.com/in/daniel-malmgren-de-oliveira",
   github: "https://github.com/therealdanmalmx",
-  // Discord profile URLs use the numeric user ID (username: danmalmx).
-  discord: "https://discord.com/users/516554804500365312",
   sourceRepo: "https://github.com/therealdanmalmx/danmalm-se",
 } as const;

@@ -12,7 +12,7 @@ export const sv: Content = {
   location: "Borås / Göteborg med omnejd / Remote",
   // Switch to "Tillgänglig nu" once the LIA is over.
   status: "Just nu: LIA som backendutvecklare hos Centiro.",
-  availability: "Tar mindre projekt vid sidan av – och söker fast tjänst från maj 2027.",
+  availability: "På kvällar och helger tar jag ett fåtal mindre projekt, och från maj 2027 är jag öppen för fast tjänst.",
   newTab: "(öppnas i ny flik)",
 
   nav: {
@@ -50,7 +50,7 @@ export const sv: Content = {
     "Jag är civilekonom och har jobbat nästan 20 år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. 2018 sadlade jag om – först ett bootcamp, sedan en utbildning i C# och .NET med praktik – och en vecka innan pandemin bröt ut 2020 började jag mitt första utvecklarjobb. Det enda jag ångrar är att jag inte gjorde det tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
     "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
-    "Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut.",
+    "Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag står för varje rad jag levererar.",
   ],
 
   tracks: {
@@ -80,10 +80,10 @@ export const sv: Content = {
       title: "Backendutvecklare",
       company: "Centiro",
       place: "Borås",
-      period: "nov 2026 – maj 2027",
+      period: "dec 2026 – maj 2027",
       kind: "LIA",
       summary: "Pågående LIA med fokus på C# och .NET.",
-      stack: ["C#", ".NET", "Azure DevOps", "Claude Code"],
+      stack: ["C#", ".NET", "Entity Framework", "LINQ", "Azure DevOps", "Claude Code"],
     },
     {
       id: "centiro-deltid",
@@ -92,7 +92,7 @@ export const sv: Content = {
       place: "Borås",
       period: "sep – dec 2026",
       summary:
-        "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen.",
+        "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen. Ledde vidare till LIA på samma företag.",
       stack: ["Angular", "Azure DevOps", "Octopus Deploy", "Claude Code"],
     },
     {
