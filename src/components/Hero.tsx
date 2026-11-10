@@ -49,13 +49,13 @@ export function Hero({ t }: { t: Content }) {
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4 md:mt-10">
           <a
-            href={siteConfig.booking.interview}
+            href={siteConfig.booking.project}
             className="rounded-sm bg-accent px-6 py-3 font-semibold text-obsidian transition-opacity hover:opacity-90"
           >
-            {t.tracks.employment.cta}
+            {t.tracks.projects.cta}
           </a>
-          <a href={siteConfig.booking.project} className="text-muted underline-offset-4 transition-colors hover:text-ink hover:underline">
-            {hero.projectLink}
+          <a href={siteConfig.booking.interview} className="text-muted underline-offset-4 transition-colors hover:text-ink hover:underline">
+            {hero.employmentLink}
           </a>
           <SocialLinks t={t} className="text-muted" />
           <a

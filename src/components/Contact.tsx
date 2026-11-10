@@ -25,11 +25,11 @@ export function Contact({ t }: { t: Content }) {
           <CalendarIcon className="size-6 text-accent" />
           <span className="font-display text-sm tracking-widest text-muted uppercase">{c.booking}</span>
           <span className="flex flex-wrap gap-x-4 gap-y-1">
-            <a href={siteConfig.booking.interview} className="text-accent underline-offset-4 hover:underline">
-              {c.bookInterview}
-            </a>
             <a href={siteConfig.booking.project} className="text-accent underline-offset-4 hover:underline">
               {c.bookProject}
+            </a>
+            <a href={siteConfig.booking.interview} className="text-accent underline-offset-4 hover:underline">
+              {c.bookInterview}
             </a>
           </span>
         </div>

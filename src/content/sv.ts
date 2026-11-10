@@ -11,8 +11,8 @@ export const sv: Content = {
   role: "Fullstackutvecklare · React, Vue, TypeScript & .NET",
   location: "Borås / Göteborg med omnejd / Remote",
   // Switch to "Tillgänglig nu" once the LIA is over.
-  status: "Just nu: frontendutvecklare hos Centiro.",
-  availability: "Tar emot uppdrag redan nu – öppen för tillsvidareanställning från maj 2027.",
+  status: "Just nu: LIA som backendutvecklare hos Centiro.",
+  availability: "Tar mindre projekt vid sidan av – och söker fast tjänst från maj 2027.",
   newTab: "(öppnas i ny flik)",
 
   nav: {
@@ -43,11 +43,11 @@ export const sv: Content = {
     greeting: "Hej, jag heter",
     intro: "utvecklare sedan 2020, som började i frontend och nu jobbar fullstack. Jag börjar med varför, sen bygger jag det.",
     photoAlt: "Porträtt av Daniel Malmgren de Oliveira",
-    projectLink: "eller diskutera ett projekt →",
+    employmentLink: "eller boka samtal om anställning →",
   },
 
   about: [
-    "Jag är civilekonom och har jobbat nästan 20 år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. En vecka innan pandemin bröt ut 2020 bytte jag bana till utveckling. Det enda jag ångrar är att jag inte gjorde det tidigare.",
+    "Jag är civilekonom och har jobbat nästan 20 år med strategi och affärsutveckling i internationella miljöer – bland annat på DHL och för Nederländernas utrikesministerium. 2018 sadlade jag om – först ett bootcamp, sedan en utbildning i C# och .NET med praktik – och en vecka innan pandemin bröt ut 2020 började jag mitt första utvecklarjobb. Det enda jag ångrar är att jag inte gjorde det tidigare.",
     "Många utvecklare börjar med frågan hur något ska byggas. Jag börjar nästan alltid med varför: vilken nytta gör det, och för vem? Därför är jag bra på att ta luddiga krav från verksamheten och göra något konkret och hållbart av dem.",
     "Vue, React och TypeScript är min hemmaplan. Med C# och .NET kan jag ta helhetsansvar från gränssnitt till API. Jag trivs bäst i prestigelösa team där man delar med sig – i kodgranskningen och vid kaffemaskinen.",
     "Jag använder AI-verktyg som Claude Code och GitHub Copilot dagligen för att jobba snabbare – men jag granskar och förstår varje rad som går ut.",
@@ -58,7 +58,7 @@ export const sv: Content = {
     employment: {
       heading: "Anställning",
       text: "Jag söker en fast tjänst som fullstack-, back- eller frontendutvecklare från maj 2027, i Borås, Göteborg med omnejd eller remote.",
-      cta: "Boka samtal",
+      cta: "Boka samtal om anställning",
     },
     projects: {
       heading: "Projekt & samarbeten",
@@ -70,18 +70,17 @@ export const sv: Content = {
         { title: "Leverans i små steg.", text: "Du ser resultat tidigt och kan styra längs vägen." },
       ],
       invoicing: "Jag fakturerar via ett egenanställningsföretag – du får en vanlig faktura.",
-      cta: "Boka projektmöte",
+      cta: "Boka projektsamtal (15 min)",
     },
   },
 
   experience: [
     {
       id: "centiro",
-      hidden: true,
       title: "Backendutvecklare",
       company: "Centiro",
       place: "Borås",
-      period: "dec 2026 – maj 2027",
+      period: "nov 2026 – maj 2027",
       kind: "LIA",
       summary: "Pågående LIA med fokus på C# och .NET.",
       stack: ["C#", ".NET", "Azure DevOps", "Claude Code"],
@@ -120,7 +119,7 @@ export const sv: Content = {
       period: "sep 2025 – jun 2027",
       kind: "Utbildning",
       education: true,
-      summary: "Tvåårig utbildning med fokus på C#, .NET, Entity Framework och databaser – samt React, React Native och Hono.",
+      summary: "För att gå från frontend till fullstack: tvåårig utbildning med fokus på C#, .NET, Entity Framework och databaser – samt React, React Native och Hono. LIA-perioderna på Avarda och Centiro ingår.",
       stack: ["C#", ".NET", "Entity Framework", "SQL", "React", "React Native", "Hono", "Claude Code", "GitHub Copilot"],
     },
     {
@@ -211,8 +210,40 @@ export const sv: Content = {
       place: "Göteborg",
       period: "sep 2019 – jan 2020",
       kind: "Praktik",
-      summary: "Internt CMS för konsultprofiler, uppdrag och tillgänglighet.",
+      summary: "Internt CMS för konsultprofiler, uppdrag och tillgänglighet – praktik inom Lexicons utbildning.",
       stack: ["Angular", "C#", "ASP.NET", "Entity Framework", "SQL Server", "Azure DevOps"],
+    },
+    {
+      id: "earlier-career",
+      title: "Strategi och affärsutveckling",
+      company: "DHL, Nederländernas utrikesministerium m.fl.",
+      place: "Internationellt",
+      period: "fram till 2018",
+      summary:
+        "Nästan 20 år med strategi och affärsutveckling i internationella miljöer – innan jag sadlade om till utvecklare.",
+      stack: [],
+    },
+    {
+      id: "lexicon",
+      title: "Påbyggnadskurs C# och .NET",
+      company: "Lexicon",
+      place: "Göteborg",
+      period: "apr 2019 – jan 2020",
+      kind: "Utbildning",
+      education: true,
+      summary: "Tio månader inklusive praktik på Sprinta. Även frontend med HTML, CSS, JavaScript och Angular.",
+      stack: ["C#", ".NET", "Angular"],
+    },
+    {
+      id: "craft-academy",
+      title: "Fullstack-bootcamp",
+      company: "Craft Academy",
+      place: "Göteborg",
+      period: "2018",
+      kind: "Utbildning",
+      education: true,
+      summary: "Fyra månader, projektbaserat: TDD och agilt arbetssätt med Ruby on Rails, Angular och Ionic.",
+      stack: ["Ruby on Rails", "Angular", "Ionic"],
     },
   ],
   experienceUi: {

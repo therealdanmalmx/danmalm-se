@@ -90,7 +90,7 @@ export type Content = {
     greeting: string;
     intro: string;
     photoAlt: string;
-    projectLink: string;
+    employmentLink: string;
   };
   about: string[];
   tracks: {

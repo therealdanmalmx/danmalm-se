@@ -31,10 +31,10 @@ export function Header({ t }: { t: Content }) {
         <div className="flex items-center gap-4">
           <LanguageToggle current={t.locale} label={t.nav.language} />
           <a
-            href={siteConfig.booking.interview}
+            href={siteConfig.booking.project}
             className="rounded-sm bg-accent px-4 py-2 text-sm font-semibold text-obsidian transition-opacity hover:opacity-90"
           >
-            {t.tracks.employment.cta}
+            {t.tracks.projects.cta}
           </a>
         </div>
       </div>

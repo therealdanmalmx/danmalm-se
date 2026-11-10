@@ -16,8 +16,8 @@ export const en: Content = {
   },
   role: "Full-stack developer · React, Vue, TypeScript & .NET",
   location: "Borås / Gothenburg area / Remote",
-  status: "Currently: front-end developer at Centiro.",
-  availability: "Taking on projects now – open to permanent roles from May 2027.",
+  status: "Currently: back-end developer intern at Centiro.",
+  availability: "Taking on smaller projects alongside – and looking for a permanent role from May 2027.",
   newTab: "(opens in a new tab)",
 
   nav: {
@@ -48,11 +48,11 @@ export const en: Content = {
     greeting: "Hi, I'm",
     intro: "a developer since 2020 who started in front-end and now works full-stack. I start with why, then I build it.",
     photoAlt: "Portrait of Daniel Malmgren de Oliveira",
-    projectLink: "or discuss a project →",
+    employmentLink: "or book a call about a role →",
   },
 
   about: [
-    "Before I wrote code, I spent almost 20 years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. I switched careers a week before the pandemic hit in 2020 – my only regret is not doing it sooner.",
+    "Before I wrote code, I spent almost 20 years in strategy and business development in international settings – at DHL and for the Dutch Ministry of Foreign Affairs, among others. In 2018 I retrained – first a bootcamp, then a C# and .NET programme with an internship – and a week before the pandemic hit in 2020 I started my first developer job. My only regret is not doing it sooner.",
     "Many developers start by asking how something should be built. I almost always start with why: what value does it create, and for whom? That's why I'm good at turning fuzzy business requirements into something concrete and sustainable.",
     "Vue, React and TypeScript are my home turf. With C# and .NET I can own the whole chain, from interface to API. I do my best work in down-to-earth teams where people share – in code reviews and at the coffee machine.",
     "I use AI tools like Claude Code and GitHub Copilot daily to work faster – but I review and understand every line that ships.",
@@ -63,7 +63,7 @@ export const en: Content = {
     employment: {
       heading: "Employment",
       text: "I'm looking for a permanent role as a full-stack, back-end or front-end developer from May 2027 – in Borås, the Gothenburg area or remote.",
-      cta: "Book a call",
+      cta: "Book a call about a role",
     },
     projects: {
       heading: "Projects & collaborations",
@@ -75,7 +75,7 @@ export const en: Content = {
         { title: "Delivered in small steps.", text: "You see results early and can steer along the way." },
       ],
       invoicing: "I invoice through an umbrella company – you get a regular invoice.",
-      cta: "Book a project meeting",
+      cta: "Book a project call (15 min)",
     },
   },
 
@@ -83,7 +83,7 @@ export const en: Content = {
     {
       ...base["centiro"],
       title: "Back-end developer",
-      period: "Dec 2026 – May 2027",
+      period: "Nov 2026 – May 2027",
       kind: "Internship",
       summary: "Ongoing internship focused on C# and .NET.",
     },
@@ -112,7 +112,7 @@ export const en: Content = {
       company: "Higher Vocational Education (YH)",
       period: "Sep 2025 – Jun 2027",
       kind: "Education",
-      summary: "Two-year programme focused on C#, .NET, Entity Framework and databases – plus React, React Native and Hono.",
+      summary: "To move from front-end to full-stack: a two-year programme focused on C#, .NET, Entity Framework and databases – plus React, React Native and Hono. The internships at Avarda and Centiro are part of it.",
     },
     {
       ...base["one-sky"],
@@ -182,7 +182,31 @@ export const en: Content = {
       place: "Gothenburg",
       period: "Sep 2019 – Jan 2020",
       kind: "Internship",
-      summary: "Internal CMS for consultant profiles, assignments and availability.",
+      summary: "Internal CMS for consultant profiles, assignments and availability – an internship within Lexicon's programme.",
+    },
+    {
+      ...base["earlier-career"],
+      title: "Strategy and business development",
+      company: "DHL, Dutch Ministry of Foreign Affairs and others",
+      place: "International",
+      period: "until 2018",
+      summary:
+        "Almost 20 years in strategy and business development in international settings – before I retrained as a developer.",
+    },
+    {
+      ...base["lexicon"],
+      title: "C# and .NET course",
+      place: "Gothenburg",
+      period: "Apr 2019 – Jan 2020",
+      kind: "Education",
+      summary: "Ten months including an internship at Sprinta. Also front-end with HTML, CSS, JavaScript and Angular.",
+    },
+    {
+      ...base["craft-academy"],
+      title: "Full-stack bootcamp",
+      place: "Gothenburg",
+      kind: "Education",
+      summary: "Four months, project-based: TDD and agile ways of working with Ruby on Rails, Angular and Ionic.",
     },
   ],
   experienceUi: {

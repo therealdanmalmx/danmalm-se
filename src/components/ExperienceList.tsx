@@ -17,6 +17,8 @@ function Meta({ item }: { item: Experience }) {
 }
 
 function Stack({ item, className }: { item: Experience; className: string }) {
+  // Pre-developer roles have no stack.
+  if (item.stack.length === 0) return null;
   return (
     <p className={`${monoClass} ${className}`}>
       <span className="text-accent">stack:</span> {item.stack.join(" · ")}
