@@ -92,7 +92,7 @@ export const en: Content = {
       ...base["centiro-deltid"],
       title: "Front-end developer (part-time)",
       period: "Sep – Nov 2026",
-      summary: "Upgraded the Angular version and rolled out the company's design system in the application. Led to an internship at the same company.",
+      summary: "Upgraded the Angular version and rolled out the company's design system in the application.",
     },
     {
       ...base["avarda"],

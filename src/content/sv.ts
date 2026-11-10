@@ -93,7 +93,7 @@ export const sv: Content = {
       place: "Borås",
       period: "sep – nov 2026",
       summary:
-        "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen. Ledde vidare till LIA på samma företag.",
+        "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen.",
       stack: ["Angular", "Azure DevOps", "Octopus Deploy", "Claude Code"],
     },
     {
