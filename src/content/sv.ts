@@ -90,7 +90,7 @@ export const sv: Content = {
       title: "Frontendutvecklare (deltid)",
       company: "Centiro",
       place: "Borås",
-      period: "sep – dec 2026",
+      period: "sep – nov 2026",
       summary:
         "Uppgraderade Angular-versionen och införde företagets designsystem i applikationen. Ledde vidare till LIA på samma företag.",
       stack: ["Angular", "Azure DevOps", "Octopus Deploy", "Claude Code"],
