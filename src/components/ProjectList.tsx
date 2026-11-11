@@ -70,6 +70,14 @@ export function ProjectItem({ t, project }: { t: Content; project: Project }) {
           )}
         </h3>
         {project.tagline && <p className="mt-1 font-display text-accent">{project.tagline}</p>}
+        {/* Shown on every screen size, outside the case study's "Read more" on phones. */}
+        {project.role && (
+          <p className="mt-4 max-w-3xl leading-relaxed">
+            <span className="mr-2 font-mono text-xs uppercase tracking-widest text-accent">{t.projectUi.role}</span>
+            <span className="sr-only">: </span>
+            {project.role}
+          </p>
+        )}
         {project.description && (
           <p className="mt-3 max-w-3xl leading-relaxed text-muted">{project.description}</p>
         )}

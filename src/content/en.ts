@@ -230,10 +230,11 @@ export const en: Content = {
         problem:
           "Onboarding around 100 new hires a year was handled with checklists, emails and spreadsheets. HR spent a lot of time keeping it all together and chasing status.",
         solution:
-          "As part of a team, we built a web tool where every new hire has their own onboarding plan, with sign-in, status per step and filtering. I helped choose the tech and developed the tool in React and Next.js.",
+          "As part of a team, we built a web tool where every new hire has their own onboarding plan, with sign-in, status per step and filtering.",
         result:
           "HR can see at a glance where each person stands. The tool replaced the manual process entirely.",
       },
+      role: "Developer in the team – helped choose the tech and developed the tool in React and Next.js.",
     },
     {
       ...baseProjects["consid-annual-report"],
@@ -247,6 +248,7 @@ export const en: Content = {
         result:
           "The solution replaced the external service, saved the client 50% in its first year and gave them more control over their digital reporting.",
       },
+      role: "Developer – developed the solution in Umbraco and Razor Pages.",
     },
     {
       ...baseProjects["ellos-value-chain"],
@@ -256,10 +258,11 @@ export const en: Content = {
         problem:
           "Customers and new regulations demanded more insight into how products are made – but information about materials, certifications and suppliers never reached the customer.",
         solution:
-          "I built a larger component in Vue and Nuxt that shows the product's journey through the value chain: origin of materials, certifications, ratings and suppliers.",
+          "A larger component in Vue and Nuxt that shows the product's journey through the value chain: origin of materials, certifications, ratings and suppliers.",
         result:
           "Customers can see where and what the products are made of, which builds trust and helps Ellos Group meet transparency requirements.",
       },
+      role: "Front-end developer – built the component in Vue and Nuxt.",
     },
     {
       ...baseProjects["consid-cv-portal"],
@@ -273,6 +276,7 @@ export const en: Content = {
         result:
           "Consultant managers and sales get an instant overview of who is available and find the right profile for an assignment much more easily.",
       },
+      role: "Developer in the Scrum team – contributed sign-up, dashboards and advanced search.",
     },
     {
       ...baseProjects["gethubbers"],
@@ -293,6 +297,7 @@ export const en: Content = {
   projectUi: {
     visit: "Visit site ↗",
     source: "Source on GitHub ↗",
+    role: "My role",
     problem: "Problem",
     solution: "Solution",
     result: "Result",

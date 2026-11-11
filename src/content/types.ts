@@ -31,6 +31,8 @@ export type Project = {
   description?: string;
   // Problem / solution / result, shown as three blocks.
   caseStudy?: { problem: string; solution: string; result: string };
+  // What Daniel personally did, as distinct from what the team delivered.
+  role?: string;
   stack: string[];
   // Only set for public repositories.
   repo?: string;
@@ -124,7 +126,7 @@ export type Content = {
   projects: Project[];
   testimonials: Testimonial[];
   testimonialsMore: string;
-  projectUi: { visit: string; source: string; problem: string; solution: string; result: string };
+  projectUi: { visit: string; source: string; role: string; problem: string; solution: string; result: string };
   skills: {
     daily: Skill[];
     experienced: Skill[];

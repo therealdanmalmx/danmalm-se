@@ -269,10 +269,11 @@ export const sv: Content = {
         problem:
           "Onboardingen av runt 100 nyanställda om året sköttes med checklistor, mejl och kalkylark. HR fick lägga mycket tid på att hålla ihop allt och jaga status.",
         solution:
-          "I ett team byggde vi ett webbverktyg där varje nyanställd har en egen onboardingplan, med inloggning, status per steg och filtrering. Jag var med och valde teknik och utvecklade verktyget i React och Next.js.",
+          "I ett team byggde vi ett webbverktyg där varje nyanställd har en egen onboardingplan, med inloggning, status per steg och filtrering.",
         result:
           "HR ser direkt var varje person befinner sig. Verktyget ersatte den manuella processen helt.",
       },
+      role: "Utvecklare i teamet – med och valde teknik och utvecklade verktyget i React och Next.js.",
       stack: ["React", "Next.js", "TypeScript", "Tailwind"],
     },
     {
@@ -288,6 +289,7 @@ export const sv: Content = {
         result:
           "Lösningen ersatte den externa tjänsten, sparade kunden 50 % redan första året och gav dem större kontroll över sin digitala rapportering.",
       },
+      role: "Utvecklare – utvecklade lösningen i Umbraco och Razor Pages.",
       stack: ["Umbraco", "Razor Pages", "HTML", "CSS"],
     },
     {
@@ -299,10 +301,11 @@ export const sv: Content = {
         problem:
           "Kunder och nya regelkrav ställde högre krav på insyn i hur produkterna tillverkas – men informationen om material, certifieringar och leverantörer nådde inte fram till kunden.",
         solution:
-          "Jag byggde en större komponent i Vue och Nuxt som visar produktens väg genom värdekedjan: materialens ursprung, certifieringar, betyg och leverantörer.",
+          "En större komponent i Vue och Nuxt som visar produktens väg genom värdekedjan: materialens ursprung, certifieringar, betyg och leverantörer.",
         result:
           "Kunderna kan se var och av vad produkterna är gjorda, vilket stärker förtroendet och hjälper Ellos Group att möta kraven på transparens.",
       },
+      role: "Frontendutvecklare – byggde komponenten i Vue och Nuxt.",
       stack: ["Vue", "Nuxt", "TypeScript"],
     },
     {
@@ -318,6 +321,7 @@ export const sv: Content = {
         result:
           "Konsultchefer och säljare får direkt överblick över vilka som är tillgängliga och hittar rätt profil till uppdragen betydligt enklare.",
       },
+      role: "Utvecklare i Scrum-teamet – bidrog till registrering, dashboards och avancerad sökning.",
       stack: ["Vue", "TypeScript", "Tailwind", "REST"],
     },
     {
@@ -352,6 +356,7 @@ export const sv: Content = {
   projectUi: {
     visit: "Besök sidan ↗",
     source: "Källkod på GitHub ↗",
+    role: "Min roll",
     problem: "Problem",
     solution: "Lösning",
     result: "Resultat",
