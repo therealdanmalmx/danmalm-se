@@ -93,6 +93,11 @@ export type Content = {
     intro: string;
     photoAlt: string;
     employmentLink: string;
+    // Core technologies shown as a quick-scan strip; links to the skills section.
+    stack: string[];
+    stackLabel: string;
+    // Screen-reader text for the link to the full skills section.
+    stackLink: string;
   };
   about: string[];
   tracks: {

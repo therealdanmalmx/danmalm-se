@@ -45,6 +45,9 @@ export const sv: Content = {
     intro: "utvecklare sedan 2020, som började i frontend och nu jobbar fullstack. Jag börjar med varför, sen bygger jag det.",
     photoAlt: "Porträtt av Daniel Malmgren de Oliveira",
     employmentLink: "eller boka samtal om anställning →",
+    stack: ["C#", ".NET", "TypeScript", "React", "Vue", "Angular", "Next.js", "SQL Server"],
+    stackLabel: "Stack",
+    stackLink: "Alla färdigheter",
   },
 
   about: [

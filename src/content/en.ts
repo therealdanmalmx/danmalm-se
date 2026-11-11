@@ -50,6 +50,9 @@ export const en: Content = {
     intro: "a developer since 2020 who started in front-end and now works full-stack. I start with why, then I build it.",
     photoAlt: "Portrait of Daniel Malmgren de Oliveira",
     employmentLink: "or book a call about a role →",
+    stack: sv.hero.stack,
+    stackLabel: "Stack",
+    stackLink: "All skills",
   },
 
   about: [

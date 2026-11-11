@@ -67,6 +67,17 @@ export function Hero({ t }: { t: Content }) {
             CV ↓
           </a>
         </div>
+        {/* Quick-scan stack for recruiters; the full list with context is in the skills section.
+            Placed after the buttons so the booking button stays on the first screen on phones. */}
+        <a href="#fardigheter" className="group mt-6 block max-w-2xl font-mono text-sm leading-relaxed md:mt-8">
+          <span className="mr-3 tracking-wide text-accent uppercase">{hero.stackLabel}</span>
+          <span className="sr-only">: </span>
+          <span className="text-ink/90 underline-offset-4 group-hover:underline">{hero.stack.join(" · ")}</span>
+          <span aria-hidden="true" className="text-muted transition-colors group-hover:text-accent">
+            {"\u00a0→"}
+          </span>
+          <span className="sr-only"> – {hero.stackLink}</span>
+        </a>
       </div>
     </div>
   );
